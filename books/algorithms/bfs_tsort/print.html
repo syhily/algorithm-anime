@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Kahn 算法 | 动画算法与数据结构</title>
+    <link rel="stylesheet" href="/asserts/stylesheets/print.css" type="text/css" media="all"/>
+</head>
+<body>
+<div class="wrapper">
+    <h3>Kahn 算法 | <a href="/">动画算法与数据结构</a></h3>
+
+    <div id="content" class="content">
+        <h4>符号</h4>
+
+        <table class="items" cellspacing="0">
+            <tbody id="variable">
+            <tr>
+                <th class="scene_desc" colspan="3">数据</th>
+            </tr>
+            <tr>
+                <td class="symbol"><img src="variable_deg.svg"/></td>
+                <td>节点的入度</td>
+                <td class="code">deg</td>
+            </tr>
+            <tr>
+                <td class="symbol"><img src="variable_order.svg"/></td>
+                <td>已排序完毕的顺序</td>
+                <td class="code">order</td>
+            </tr>
+            </tbody>
+        </table>
+        <br/>
+        <table class="items" cellspacing="0">
+            <tbody id="formula">
+            <tr>
+                <th class="scene_desc" colspan="3">入度的初始化</th>
+            </tr>
+            <tr>
+                <td class="symbol"><img src="formula_all.svg"/></td>
+                <td>计算入度</td>
+                <td class="code"></td>
+            </tr>
+            <tr>
+                <th class="scene_desc" colspan="3">排序</th>
+            </tr>
+            <tr>
+                <td class="symbol"><img src="formula_ui.svg"/></td>
+                <td>从队列取出入度为 0 的节点，确定顺序</td>
+                <td class="code">u &larr; que.dequeue()<br/>order[u] &larr; t++</td>
+            </tr>
+            <tr>
+                <td class="symbol"><img src="formula_vi.svg"/></td>
+                <td>将相邻节点的入度减 1</td>
+                <td class="code">deg[v]--</td>
+            </tr>
+            <tr>
+                <td class="symbol"><img src="formula_tail.svg"/></td>
+                <td>将入度为 0 的节点插入队列</td>
+                <td class="code">que.enqueue(v)</td>
+            </tr>
+            <tr>
+                <td class="symbol"><img src="formula_finished.svg"/></td>
+                <td>扩展已确定顺序的节点组的范围</td>
+                <td class="code">order 已确定的节点</td>
+            </tr>
+            <tr>
+                <th class="scene_desc" colspan="3">顺序的输出</th>
+            </tr>
+            <tr>
+                <td class="symbol"><img src="formula_all_out.svg"/></td>
+                <td>输出顺序</td>
+                <td class="code"></td>
+            </tr>
+            </tbody>
+        </table>
+
+        <br/>
+        <h4>动画</h4>
+        <div id="scene" class="scene">
+            <div><p><b class="scene_desc">入度的初始化</b><br/><img src="scene_0.svg" alt="Kahn 算法 | 入度的初始化"
+                                                                    title="Kahn 算法 | 入度的初始化"/></p></div>
+            <div><p><b class="scene_desc">排序</b><br/><img src="scene_1.svg" alt="Kahn 算法 | 排序"
+                                                            title="Kahn 算法 | 排序"/></p></div>
+            <div><p><b class="scene_desc">顺序的输出</b><br/><img src="scene_2.svg" alt="Kahn 算法 | 顺序的输出"
+                                                                  title="Kahn 算法 | 顺序的输出"/></p></div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+

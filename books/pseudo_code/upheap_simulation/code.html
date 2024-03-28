@@ -1,0 +1,33 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>动画算法与数据结构</title>
+    <link rel="stylesheet" href="/asserts/stylesheets/main.css" type="text/css" media="all"/>
+</head>
+
+<div class="pseudo_code">
+
+<pre>
+# 将通过数组 A 构建的堆的元素 i 更新为更大的值 value
+increase(A, i, value):
+    A[i] &larr; value
+
+# 从通过数组 A 构建的堆的元素 i 开始向上调整堆
+upHeap(A, i):
+    while True:
+        if  i &le; 0:               # 到达根节点时结束
+            break 
+        if  A[i] &le; A[parent(i)]: # 满足堆条件时结束
+            break 
+        swap(A[i], A[parent(i)])
+        i &larr; parent(i)          # 向根节点移动
+
+
+# 增加元素值的使用示例
+A &larr; 满足堆条件的整数列
+increase(A, 9, 25)
+upHeap(A, 9)
+</pre>
+</div>
+</body>
+</html>

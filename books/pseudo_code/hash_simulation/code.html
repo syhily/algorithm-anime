@@ -1,0 +1,43 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>动画算法与数据结构</title>
+    <link rel="stylesheet" href="/asserts/stylesheets/main.css" type="text/css" media="all"/>
+</head>
+
+<div class="pseudo_code">
+
+
+<pre>
+class HashTable:
+    N   # 哈希表的大小
+    key # 大小为 N 的表
+
+    h1(k):
+        return k mod N    # key 除以 N 的余数
+
+    h2(k):
+        return 1 + (k mod (N-1))
+
+    # 哈希函数
+    hash(k, i):
+        return (h1(k) + i*h2(k)) mod N
+
+    # 插入键 k
+    insert(k):
+        i &larr; 0 # 冲突次数
+        while True:
+            pos &larr; hash(k, i)
+            if key[pos]是空余位置:
+                key[pos] &larr; k
+                return pos # 返回位置，结束 
+            else:
+                i++        # 如果不是空余位置，则增加冲突次数，再次尝试
+</pre>
+</div>
+</body>
+</html>
+
+
+  
+

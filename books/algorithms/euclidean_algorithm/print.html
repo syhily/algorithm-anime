@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>欧几里得算法 | 动画算法与数据结构</title>
+    <link rel="stylesheet" href="/asserts/stylesheets/print.css" type="text/css" media="all"/>
+</head>
+<body>
+<div class="wrapper">
+    <h3>欧几里得算法 | <a href="/">动画算法与数据结构</a></h3>
+
+    <div id="content" class="content">
+        <h4>符号</h4>
+
+        <table class="items" cellspacing="0">
+            <tbody id="variable">
+            <tr>
+                <th class="scene_desc" colspan="3">数据</th>
+            </tr>
+            <tr>
+                <td class="symbol"><img src="variable_a.svg"/></td>
+                <td>第一个整数</td>
+                <td class="code">a</td>
+            </tr>
+            <tr>
+                <td class="symbol"><img src="variable_b.svg"/></td>
+                <td>第二个整数</td>
+                <td class="code">b</td>
+            </tr>
+            <tr>
+                <td class="symbol"><img src="variable_r.svg"/></td>
+                <td>a 除以 b 的余数</td>
+                <td class="code">r</td>
+            </tr>
+            </tbody>
+        </table>
+        <br/>
+        <table class="items" cellspacing="0">
+            <tbody id="formula">
+            <tr>
+                <th class="scene_desc" colspan="3">输入</th>
+            </tr>
+            <tr>
+                <td class="symbol"><img src="formula_inx.svg"/></td>
+                <td>输入两个整数</td>
+                <td class="code"></td>
+            </tr>
+            <tr>
+                <th class="scene_desc" colspan="3">欧几里得算法</th>
+            </tr>
+            <tr>
+                <td class="symbol"><img src="formula_zw.svg"/></td>
+                <td>将 a 除以 b 的余数赋值给 r</td>
+                <td class="code">r &larr; a % b</td>
+            </tr>
+            <tr>
+                <td class="symbol"><img src="formula_xw.svg"/></td>
+                <td>复制值</td>
+                <td class="code">a &larr; b<br/>b &larr; r</td>
+            </tr>
+            <tr>
+                <th class="scene_desc" colspan="3">输出</th>
+            </tr>
+            <tr>
+                <td class="symbol"><img src="formula_outx.svg"/></td>
+                <td>输出最大公因数</td>
+                <td class="code"></td>
+            </tr>
+            </tbody>
+        </table>
+
+        <br/>
+        <h4>动画</h4>
+        <div id="scene" class="scene">
+            <div><p><b class="scene_desc">输入</b><br/><img src="scene_0.svg" alt="欧几里得算法 | 输入"
+                                                            title="欧几里得算法 | 输入"/></p></div>
+            <div><p><b class="scene_desc">欧几里得算法</b><br/><img src="scene_1.svg" alt="欧几里得算法 | 欧几里得算法"
+                                                                    title="欧几里得算法 | 欧几里得算法"/></p></div>
+            <div><p><b class="scene_desc">输出</b><br/><img src="scene_2.svg" alt="欧几里得算法 | 输出"
+                                                            title="欧几里得算法 | 输出"/></p></div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+

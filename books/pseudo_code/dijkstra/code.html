@@ -1,0 +1,40 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>动画算法与数据结构</title>
+    <link rel="stylesheet" href="/asserts/stylesheets/main.css" type="text/css" media="all"/>
+</head>
+
+<div class="pseudo_code">
+
+
+<pre>
+# T: 最短経路木
+# 图 g 和起点 s
+dijkstra(g, s):
+    PriorityQueue que     # 元素为 ( 暂定距离，节点编号 ) 数据组的优先队列
+
+    for v &larr; 0 to g.N - 1:
+        dist[v] &larr; INF
+
+    清空T
+    dist[s] &larr; 0
+    将 (0, s) 插入到 que
+
+    while not que.empty():
+        cost, u &larr; que.extractMin() # 得到的暂定距离最小的数据组元素，分别赋值给 cost 和 u
+
+        if dist[u] < cost: continue
+
+        将 u 加入 T
+  
+        for e in g.adjLists[u]:
+            if e.v在 T 中: continue
+            if dist[e.v] > dist[u] + e.weight
+                dist[e.v] &larr; dist[u] + e.weight
+                将 (dist[e.v], e.v) 插入 que
+                parent[e.v] &larr; u
+</pre>
+</div>
+</body>
+</html>

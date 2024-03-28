@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>和 | 动画算法与数据结构</title>
+    <link rel="stylesheet" href="/asserts/stylesheets/print.css" type="text/css" media="all"/>
+</head>
+<body>
+<div class="wrapper">
+    <h3>和 | <a href="/">动画算法与数据结构</a></h3>
+
+    <div id="content" class="content">
+        <h4>符号</h4>
+
+        <table class="items" cellspacing="0">
+            <tbody id="variable">
+            <tr>
+                <th class="scene_desc" colspan="3">数据</th>
+            </tr>
+            <tr>
+                <td class="symbol"><img src="variable_A.svg"/></td>
+                <td>整数列</td>
+                <td class="code">A</td>
+            </tr>
+            <tr>
+                <td class="symbol"><img src="variable_sum.svg"/></td>
+                <td>元素的和</td>
+                <td class="code">sum</td>
+            </tr>
+            </tbody>
+        </table>
+        <br/>
+        <table class="items" cellspacing="0">
+            <tbody id="formula">
+            <tr>
+                <th class="scene_desc" colspan="3">输入及初始化</th>
+            </tr>
+            <tr>
+                <td class="symbol"><img src="formula_all.svg"/></td>
+                <td>读取整数列</td>
+                <td class="code"></td>
+            </tr>
+            <tr>
+                <td class="symbol"><img src="formula_ini.svg"/></td>
+                <td>将和初始化为 0</td>
+                <td class="code">sum &larr; 0</td>
+            </tr>
+            <tr>
+                <th class="scene_desc" colspan="3">加法运算</th>
+            </tr>
+            <tr>
+                <td class="symbol"><img src="formula_i.svg"/></td>
+                <td>读取第 i 个元素</td>
+                <td class="code">A[i]</td>
+            </tr>
+            <tr>
+                <td class="symbol"><img src="formula_t.svg"/></td>
+                <td>将读取的元素加到sum上</td>
+                <td class="code">sum &larr; sum + A[i]</td>
+            </tr>
+            <tr>
+                <td class="symbol"><img src="formula_passed.svg"/></td>
+                <td>已完成加法运算的范围</td>
+                <td class="code">区间[0, i]</td>
+            </tr>
+            <tr>
+                <th class="scene_desc" colspan="3">输出</th>
+            </tr>
+            <tr>
+                <td class="symbol"><img src="formula_out.svg"/></td>
+                <td>输出和的值</td>
+                <td class="code"></td>
+            </tr>
+            </tbody>
+        </table>
+
+        <br/>
+        <h4>动画</h4>
+        <div id="scene" class="scene">
+            <div><p><b class="scene_desc">输入及初始化</b><br/><img src="scene_0.svg" alt="和 | 输入及初始化"
+                                                                    title="和 | 输入及初始化"/></p></div>
+            <div><p><b class="scene_desc">加法运算</b><br/><img src="scene_1.svg" alt="和 | 加法运算"
+                                                                title="和 | 加法运算"/></p></div>
+            <div><p><b class="scene_desc">输出</b><br/><img src="scene_2.svg" alt="和 | 输出" title="和 | 输出"/></p>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+

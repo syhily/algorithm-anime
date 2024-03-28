@@ -1,0 +1,37 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>动画算法与数据结构</title>
+    <link rel="stylesheet" href="/asserts/stylesheets/main.css" type="text/css" media="all"/>
+</head>
+
+<div class="pseudo_code">
+
+<pre>
+# 合并数组 A 的区间 [l, m) 的元素和区间 [m, r) 的元素
+# 合并后两个区间的元素按升序排列 
+merge(A, l, m, r):
+    for i &larr; l to r-1:
+        T[i] &larr; A[i]
+
+    reverse(T, m, r)
+
+    i &larr; l
+    j &larr; r-1
+
+    for k &larr; l to r-1:
+        if T[i] &le; T[j]:
+            A[k] &larr; T[i]
+            i &larr; i + 1
+        else:
+            A[k] &larr; T[j]
+            j &larr; j - 1
+
+
+# 将有 N 个元素的数组的前半部分和后半部分分开再合并、排序的使用示例
+merge(A, 0, N/2, N)
+</pre>
+</div>
+</body>
+</html>
+

@@ -1,0 +1,25 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>动画算法与数据结构</title>
+    <link rel="stylesheet" href="/asserts/stylesheets/main.css" type="text/css" media="all"/>
+</head>
+
+<div class="pseudo_code">
+
+<pre>
+for i &larr; 2 to N:
+    P[i] &larr; 1
+
+for j &larr; 4, 6, 8, ... N-1:
+    P[j] &larr; 0
+
+for i &larr; 3, 5, 7, ... sqrt(N): # 到 N 的平方根为止
+    if P[i] = 0:
+        continue  # continue语句会忽略剩余的处理并跳转到当前循环的下一步
+    for j &larr; i*2, i*3, ..., N-1:
+	P[j] &larr; 0
+</pre>
+</div>
+</body>
+</html>

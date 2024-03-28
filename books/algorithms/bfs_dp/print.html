@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>使用 BFS 计算最短距离 | 动画算法与数据结构</title>
+    <link rel="stylesheet" href="/asserts/stylesheets/print.css" type="text/css" media="all"/>
+</head>
+<body>
+<div class="wrapper">
+    <h3>使用 BFS 计算最短距离 | <a href="/">动画算法与数据结构</a></h3>
+
+    <div id="content" class="content">
+        <h4>符号</h4>
+
+        <table class="items" cellspacing="0">
+            <tbody id="variable">
+            <tr>
+                <th class="scene_desc" colspan="3">数据</th>
+            </tr>
+            <tr>
+                <td class="symbol"><img src="variable_dist.svg"/></td>
+                <td>与起点的最短距离</td>
+                <td class="code">dist</td>
+            </tr>
+            </tbody>
+        </table>
+        <br/>
+        <table class="items" cellspacing="0">
+            <tbody id="formula">
+            <tr>
+                <th class="scene_desc" colspan="3">起点的初始化</th>
+            </tr>
+            <tr>
+                <td class="symbol"><img src="formula_si.svg"/></td>
+                <td>将起点的最短距离初始化为 0</td>
+                <td class="code">dist[s] &larr; 0</td>
+            </tr>
+            <tr>
+                <th class="scene_desc" colspan="3">广度优先搜索</th>
+            </tr>
+            <tr>
+                <td class="symbol"><img src="formula_vi.svg"/></td>
+                <td>更新最短距离</td>
+                <td class="code">dist[v] &larr; dist[u] + 1</td>
+            </tr>
+            </tbody>
+        </table>
+
+        <br/>
+        <h4>动画</h4>
+        <div id="scene" class="scene">
+            <div><p><b class="scene_desc">起点的初始化</b><br/><img src="scene_0.svg"
+                                                                    alt="使用 BFS 计算最短距离 | 起点的初始化"
+                                                                    title="使用 BFS 计算最短距离 | 起点的初始化"/></p>
+            </div>
+            <div><p><b class="scene_desc">广度优先搜索</b><br/><img src="scene_1.svg"
+                                                                    alt="使用 BFS 计算最短距离 | 广度优先搜索"
+                                                                    title="使用 BFS 计算最短距离 | 广度优先搜索"/></p>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+

@@ -1,0 +1,24 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>动画算法与数据结构</title>
+    <link rel="stylesheet" href="/asserts/stylesheets/main.css" type="text/css" media="all"/>
+</head>
+
+<div class="pseudo_code">
+
+<pre>
+# 从节点 x 开始路径压缩
+compress(x):
+    if parent[x] &ne; x: # x 不是根节点
+        parent[x] &larr; compress(parent[x])
+
+    return parent[x]
+
+# 路径压缩的模拟
+compress(5)
+</pre>
+</div>
+</body>
+</html>
+

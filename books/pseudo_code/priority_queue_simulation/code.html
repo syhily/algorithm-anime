@@ -1,0 +1,68 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>动画算法与数据结构</title>
+    <link rel="stylesheet" href="/asserts/stylesheets/main.css" type="text/css" media="all"/>
+</head>
+
+<div class="pseudo_code">
+
+<pre>
+class PriorityQueue:
+    A          # 保存堆元素的数组
+    heapSize   # 实际保存数据的堆的大小
+
+    insert(x):
+        A[heapSize++] &larr; x
+        upHeap(heapSize-1)
+
+    top():
+        return A[0]
+
+    extract():
+        val &larr; A[0]
+        A[0] &larr; A[heapSize-1]
+        heapSize--
+        downHeap(0)
+        return val
+
+    upHeap(i): # 基于插入的实现
+        val &larr; A[i]
+
+        while True:
+            if  i &le; 0: break
+            if A[parent(i)] &ge; val: break
+            A[i] &larr; A[parent(i)]
+            i &larr; parent(i)
+        
+        A[i] &larr; val
+
+    downHeap(i): # 基于插入的实现
+        largest &larr; i
+        val = A[i]
+
+        while True:
+            if left(i) < heapSize and right(i) < heapSize:
+                if A[left(i)] > A[right(i)] ):
+                    largest &larr; left(i)
+                else:
+                    largest &larr; right(i)
+            else if left(i) < heapSize:
+                largest &larr; left(i)
+            else if right(i) < heapSize:
+                largest &larr; right(i)
+            else:
+                largest &larr; NIL
+
+            if largest = NIL : break
+            if A[largest] &le; val: break
+      
+            A[i] &larr; A[largest]
+            i &larr; largest
+
+        A[i] &larr; val
+</pre>
+
+</div>
+</body>
+</html>

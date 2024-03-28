@@ -1,0 +1,23 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>动画算法与数据结构</title>
+    <link rel="stylesheet" href="/asserts/stylesheets/main.css" type="text/css" media="all"/>
+</head>
+
+<div class="pseudo_code">
+
+
+<pre>
+warshallFloyd(g):
+    dist &larr; g 的邻接矩阵
+
+    for k &larr; 0 to N-1:
+        for i &larr; 0 to N-1:
+            for j &larr; 0 to N-1:
+            if dist[i][j] > dist[i][k] + dist[k][j]:
+                dist[i][j] &larr; dist[i][k] + dist[k][j]
+</pre>
+</div>
+</body>
+</html>

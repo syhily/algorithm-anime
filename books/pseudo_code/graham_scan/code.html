@@ -1,0 +1,37 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>动画算法与数据结构</title>
+    <link rel="stylesheet" href="/asserts/stylesheets/main.css" type="text/css" media="all"/>
+</head>
+
+<div class="pseudo_code">
+
+<pre>
+# 二维点群 PointGroup pg
+grahamScan(pg):
+    Stack st
+    leftmost &larr; pg.points最左下的点
+　　orderedIndex &larr; 将 pg.points 以 leftmost 为基准按照极角排序的索引列表
+
+    st.push(orderedIndex[0])
+    st.push(orderedIndex[1])
+    st.push(orderedIndex[2])
+
+    for i &larr; 3 to pg.N-1:
+        head = orderedIndex[i]
+      
+        while st.size() &ge; 2:
+            top2 &larr; st的顶点下面的点的值
+            top &larr; st的顶点的值
+            if 相对于将 pg.points[top2] 和 pg.points[top] 连起来的直线
+               pg.points[head]处于右侧（顺时针）:
+                st.pop()
+            else:
+                break
+        st.push(head)
+</pre>
+</div>
+</body>
+</html>
+

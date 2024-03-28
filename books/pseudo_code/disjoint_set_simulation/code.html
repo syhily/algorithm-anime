@@ -1,0 +1,42 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>动画算法与数据结构</title>
+    <link rel="stylesheet" href="/asserts/stylesheets/main.css" type="text/css" media="all"/>
+</head>
+
+<div class="pseudo_code">
+
+<pre>
+# 基于大小为N的森林的不相交集合
+class DisjointSet:
+    parent  # 保存构成了森林的各节点的父节点的数组
+    rank    # 管理 rank 的数组
+
+    init(): # 初始化
+        for i &larr; 0 to N-1:
+            parent[i] &larr; i
+            rank[i] &larr; 0
+
+    unite(x, y):
+        root1 &larr; findSet(x)
+        root2 &larr; findSet(y)
+        link(root1, root2)
+
+    findSet(x):
+        if paret[x] &ne; x:
+            parent[x] &larr; findSet(parent[x])
+        return parent[x];
+
+    link(x, y):
+        if rank[x] > rank[y]:
+            parent[y] &larr; x
+        else:
+            parent[x] &larr; y
+            if rank[x] = rank[y]:
+                rank[y]++
+</pre>
+</div>
+</body>
+</html>
+

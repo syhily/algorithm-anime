@@ -1,0 +1,35 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>动画算法与数据结构</title>
+    <link rel="stylesheet" href="/asserts/stylesheets/main.css" type="text/css" media="all"/>
+</head>
+
+<div class="pseudo_code">
+
+<pre>
+Graph g &larr; 生成图
+
+depthFirstSearch():
+    for v &larr; 0 to g.N - 1:
+        color[v] &larr; WHITE
+
+    for v &larr; 0 to g.N - 1:
+        if color[v] = WHITE:
+            dfs(v)
+
+dfs(u):
+    color[u] &larr; GRAY
+
+    for v in g.adjLists[u]:
+        if color[v] = WHITE:
+            dfs(v)
+        else if color[v] = GRAY:
+            边 (u, v) 是回溯边  # 检测出回溯边
+
+    color[u] &larr; BLACK
+</pre>
+</div>
+</body>
+</html>
+

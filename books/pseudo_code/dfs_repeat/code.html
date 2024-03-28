@@ -1,0 +1,34 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>动画算法与数据结构</title>
+    <link rel="stylesheet" href="/asserts/stylesheets/main.css" type="text/css" media="all"/>
+</head>
+
+<div class="pseudo_code">
+
+<pre>
+Graph g &larr; 生成图
+palette &larr; WHITE
+
+# 对非完全连通图进行深度优先搜索
+depthFirstSearch():
+    for v &larr; 0 to g.N - 1:
+        color[v] &larr; WHITE
+    
+    for v &larr; 0 to g.N - 1:
+        if color[v] = WHITE:
+            palette &larr; 新的颜色  # 更新色源
+	    dfs(v)
+
+# 递归进行深度优先搜索
+dfs(u):
+    color[u] &larr; palette
+    for v in g.adjLists[u]:
+        if color[v] = WHITE:
+            dfs(v)
+</pre>
+</div>
+</body>
+</html>
+

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>埃拉托色尼筛法 | 动画算法与数据结构</title>
+    <link rel="stylesheet" href="/asserts/stylesheets/print.css" type="text/css" media="all"/>
+</head>
+<body>
+<div class="wrapper">
+    <h3>埃拉托色尼筛法 | <a href="/">动画算法与数据结构</a></h3>
+
+    <div id="content" class="content">
+        <h4>符号</h4>
+
+        <table class="items" cellspacing="0">
+            <tbody id="variable">
+            <tr>
+                <th class="scene_desc" colspan="3">数据</th>
+            </tr>
+            <tr>
+                <td class="symbol"><img src="variable_P.svg"/></td>
+                <td>素数表，如果表中 P[i] 为 1，说明 i 为素数。</td>
+                <td class="code">P</td>
+            </tr>
+            </tbody>
+        </table>
+        <br/>
+        <table class="items" cellspacing="0">
+            <tbody id="formula">
+            <tr>
+                <th class="scene_desc" colspan="3">初始化</th>
+            </tr>
+            <tr>
+                <td class="symbol"><img src="formula_ini.svg"/></td>
+                <td>将大于等于 2 的数作为候选素数，进行初始化</td>
+                <td class="code"></td>
+            </tr>
+            <tr>
+                <th class="scene_desc" colspan="3">删除 2 的倍数</th>
+            </tr>
+            <tr>
+                <td class="symbol"><img src="formula_s.svg"/></td>
+                <td>将 2 的倍数作为合数</td>
+                <td class="code">P[j] &larr; 0</td>
+            </tr>
+            <tr>
+                <th class="scene_desc" colspan="3">删除奇数素数的倍数</th>
+            </tr>
+            <tr>
+                <td class="symbol"><img src="formula_decision.svg"/></td>
+                <td>剩下的数仍作为素数</td>
+                <td class="code">i</td>
+            </tr>
+            <tr>
+                <td class="symbol"><img src="formula_s.svg"/></td>
+                <td>已删除的素数的倍数作为合数</td>
+                <td class="code">P[j] &larr; 0</td>
+            </tr>
+            <tr>
+                <td class="symbol"><img src="formula_valid.svg"/></td>
+                <td>确定素数表</td>
+                <td class="code">区间[0, i*i]</td>
+            </tr>
+            <tr>
+                <th class="scene_desc" colspan="3">输出素数列表</th>
+            </tr>
+            <tr>
+                <td class="symbol"><img src="formula_prime.svg"/></td>
+                <td>列举素数</td>
+                <td class="code"></td>
+            </tr>
+            </tbody>
+        </table>
+
+        <br/>
+        <h4>动画</h4>
+        <div id="scene" class="scene">
+            <div><p><b class="scene_desc">初始化</b><br/><img src="scene_0.svg" alt="埃拉托色尼筛法 | 初期化"
+                                                              title="埃拉托色尼筛法 | 初期化"/></p></div>
+            <div><p><b class="scene_desc">删除 2 的倍数</b><br/><img src="scene_1.svg"
+                                                                     alt="埃拉托色尼筛法 | 删除 2 的倍数"
+                                                                     title="埃拉托色尼筛法 | 删除 2 的倍数"/></p></div>
+            <div><p><b class="scene_desc">删除奇数素数的倍数</b><br/><img src="scene_2.svg"
+                                                                          alt="埃拉托色尼筛法 | 删除奇数素数的倍数"
+                                                                          title="埃拉托色尼筛法 | 删除奇数素数的倍数"/>
+            </p></div>
+            <div><p><b class="scene_desc">输出素数列表</b><br/><img src="scene_3.svg"
+                                                                    alt="埃拉托色尼筛法 | 输出素数列表"
+                                                                    title="埃拉托色尼筛法 | 输出素数列表"/></p></div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+

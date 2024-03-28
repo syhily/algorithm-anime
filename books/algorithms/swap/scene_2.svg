@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+        width="640"
+        height="216"
+        viewBox="0 0 640 216"
+>
+    <defs>
+        <polygon points="0,0 6,8, 0,16 20,8" id="m_tmpl2"/>
+        <marker id="token_arrow" markerUnits="userSpaceOnUse" markerWidth="20" markerHeight="16" viewBox="0 0 20 16"
+                refX="14" refY="8" orient="auto">
+            <use xlink:href="#m_tmpl2" fill="#60a0ff"/>
+        </marker>
+    </defs>
+    <defs>
+        <polygon points="0,0 0,4 0,8 12,4" id="m_tmpl3"/>
+        <marker id="link_arrow" markerUnits="strokeWidth" markerWidth="12" markerHeight="8" viewBox="0 0 12 8" refX="12"
+                refY="4" orient="auto">
+            <use xlink:href="#m_tmpl3" fill="#888888"/>
+        </marker>
+    </defs>
+    <rect x="0" y="0" width="280" height="200" fill="#ffffff" stroke="#888888" stroke-width="1"/>
+    <g transform="translate(0,0)">
+        <g transform="translate(80,80) scale(1)">
+            <g fill="#ffffff" stroke="#a0a0a0" stroke-width="1">
+                <rect x="-14" y="-14" width="28" height="28" rx="4" ry="4"/>
+            </g>
+        </g>
+        <g transform="translate(200,80) scale(1)">
+            <g fill="#ffffff" stroke="#a0a0a0" stroke-width="1">
+                <rect x="-14" y="-14" width="28" height="28" rx="4" ry="4"/>
+            </g>
+        </g>
+        <g transform="translate(140,140) scale(1)">
+            <g fill="#ffffff" stroke="#a0a0a0" stroke-width="1">
+                <rect x="-14" y="-14" width="28" height="28" rx="4" ry="4"/>
+            </g>
+        </g>
+        <g transform="translate(80,80) scale(1)">
+            <g class="flash_g" fill="#ffffff" stroke="#ffd700" stroke-width="2">
+                <rect x="-14" y="-14" width="28" height="28" rx="4" ry="4"/>
+            </g>
+        </g>
+        <g transform="translate(200,80) scale(1)">
+            <g class="flash_g" fill="#ffffff" stroke="#ffd700" stroke-width="2">
+                <rect x="-14" y="-14" width="28" height="28" rx="4" ry="4"/>
+            </g>
+        </g>
+        <g transform="translate(80,80) scale(1)">
+            <g stroke-width="0">
+                <circle cx="0" cy="0" r="10" fill="#71B1FF" id="var_a_5__0"/>
+            </g>
+            <g font-size="14" font-family="sans-serif" fill="#ffffff">
+                <text id="text_a_5__0" x="0" y="0" dominant-baseline="central" text-anchor="middle">3</text>
+            </g>
+            <g font-size="14" font-family="sans-serif" fill="#4080f0">
+                <text id="" x="0" y="-28" dominant-baseline="central" text-anchor="middle">a</text>
+            </g>
+        </g>
+        <g transform="translate(200,80) scale(1)">
+            <g stroke-width="0">
+                <circle cx="0" cy="0" r="10" fill="#4080F0" id="var_b_5__0"/>
+            </g>
+            <g font-size="14" font-family="sans-serif" fill="#ffffff">
+                <text id="text_b_5__0" x="0" y="0" dominant-baseline="central" text-anchor="middle">8</text>
+            </g>
+            <g font-size="14" font-family="sans-serif" fill="#4080f0">
+                <text id="" x="0" y="-28" dominant-baseline="central" text-anchor="middle">b</text>
+            </g>
+        </g>
+        <g transform="translate(140,140) scale(1)">
+            <g stroke-width="0"></g>
+            <g font-size="14" font-family="sans-serif" fill="#ffffff"></g>
+            <g font-size="14" font-family="sans-serif" fill="#4080f0">
+                <text id="" x="0" y="-28" dominant-baseline="central" text-anchor="middle">t</text>
+            </g>
+        </g>
+    </g>
+    <text x="16" y="20" font-size="16" text-anchor="middle" fill="#888888" font-family="sans-serif">3-1</text>
+    <text x="140" y="184" font-size="9" text-anchor="middle" font-family="SimSun, 宋体, serif">交换完成了！</text>
+</svg>
+

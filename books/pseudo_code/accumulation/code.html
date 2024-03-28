@@ -1,0 +1,27 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>动画算法与数据结构</title>
+    <link rel="stylesheet" href="/asserts/stylesheets/main.css" type="text/css" media="all"/>
+</head>
+
+<div class="pseudo_code">
+
+<pre>
+A &larr; 整数列 # 从 1 开始
+AC[0] &larr; 0
+
+    
+for i &larr; 1 to N-1:
+    AC[i] &larr; AC[i-1] + A[i]
+
+Q &larr; [l, r] 形式的问题数列
+
+for q in Q:
+    l &larr; q.l
+    r &larr; q.r
+    sum &larr; AC[r] - AC[l-1]
+</pre>
+</div>
+</body>
+</html>

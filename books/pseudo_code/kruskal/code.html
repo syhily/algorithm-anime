@@ -1,0 +1,31 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>动画算法与数据结构</title>
+    <link rel="stylesheet" href="/asserts/stylesheets/main.css" type="text/css" media="all"/>
+</head>
+
+<div class="pseudo_code">
+
+
+<pre>
+# 基于图 g 构建最小生成树 MST
+kruskal(g):
+    MST &larr; 空的列表
+    edges &larr; g 的边的列表
+
+    将 edges 按权重升序排序
+
+    DisjointSet ds(g.N) # 生成元素数为 N 的不相交集合
+
+    for e in edges:
+        u &larr; e 的第 1 个端点
+        v &larr; e 的第 2 个端点
+
+        if ds.findSet(u) &ne; ds.findSet(v):
+            ds.unite(u, v)
+            向MST 添加 e
+</pre>
+</div>
+</body>
+</html>

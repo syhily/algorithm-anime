@@ -1,0 +1,29 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>动画算法与数据结构</title>
+    <link rel="stylesheet" href="/asserts/stylesheets/main.css" type="text/css" media="all"/>
+</head>
+
+<div class="pseudo_code">
+
+<pre>
+unite(x, y): // 合并两个根节点
+    if rank[x] > rank[y]:
+        parent[y] &larr; x
+    else:
+        parent[x] &larr; y
+        if rank[x] = rank[y]:
+            rank[y]++
+
+# 合并的模拟
+unite(0, 1)
+unite(2, 3)
+unite(1, 3)
+unite(4, 5)
+unite(3, 5)
+</pre>
+</div>
+</body>
+</html>
+

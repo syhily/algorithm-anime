@@ -1,0 +1,2 @@
+var variable_content = '<tr><th class="scene_desc" colspan="3">数据</th></tr><tr><td class="symbol"><img src="variable_dist.svg" /></td><td>与起点的最短距离</td><td class="code">dist</td></tr>';
+var formula_content = '<tr><th class="scene_desc" colspan="3">起点的初始化</th></tr><tr><td class="symbol"><img src="formula_si.svg" /></td><td>将起点的最短距离初始化为 0</td><td class="code">dist[s] &larr; 0</td></tr><tr><th class="scene_desc" colspan="3">广度优先搜索</th></tr><tr><td class="symbol"><img src="formula_vi.svg" /></td><td>更新最短距离</td><td class="code">dist[v] &larr; dist[u] + 1</td></tr>';

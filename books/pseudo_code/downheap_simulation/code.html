@@ -1,0 +1,40 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>动画算法与数据结构</title>
+    <link rel="stylesheet" href="/asserts/stylesheets/main.css" type="text/css" media="all"/>
+</head>
+
+<div class="pseudo_code">
+
+<pre>
+# 将通过数组 A 构建的堆的元素 i 更新为较小的值 value
+decrease(A, i, value):
+    A[i] &larr; value
+
+# 从通过数组 A 构建的堆的元素 i 开始向下调整堆
+downHeap(A, i):
+    l &larr; left(i)
+    r &larr; right(i)
+
+    # 找出父节点（自身）、左子节点、右子节点中值最大的节点
+    if l &lt; N and A[l] &gt; A[i]:
+        largest &larr; l
+    else:
+        largest &larr; i
+    if r &lt; N and A[r] &gt; A[largest]:
+        largest &larr; r
+
+    if largest &ne; i:             # 如果某个子节点的值最大
+        swap(A[i], A[largest])
+        downHeap(A, largest)     # 通过递归重复进行向下调整堆
+
+
+# 减小元素值的使用示例
+A &larr; 满足堆条件的整数列
+decrease(A, 0, 1)
+downHeap(A, 0)
+</pre>
+</div>
+</body>
+</html>

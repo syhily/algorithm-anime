@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>向上调整堆| 动画算法与数据结构</title>
+    <link rel="stylesheet" href="/asserts/stylesheets/print.css" type="text/css" media="all"/>
+</head>
+<body>
+<div class="wrapper">
+    <h3>向上调整堆| <a href="/">动画算法与数据结构</a></h3>
+
+    <div id="content" class="content">
+        <h4>符号</h4>
+
+        <table class="items" cellspacing="0">
+            <tbody id="variable">
+            <tr>
+                <th class="scene_desc" colspan="3">数据</th>
+            </tr>
+            <tr>
+                <td class="symbol"><img src="variable_A.svg"/></td>
+                <td>最大堆的元素</td>
+                <td class="code">A</td>
+            </tr>
+            </tbody>
+        </table>
+        <br/>
+        <table class="items" cellspacing="0">
+            <tbody id="formula">
+            <tr>
+                <th class="scene_desc" colspan="3">输入及初始化</th>
+            </tr>
+            <tr>
+                <td class="symbol"><img src="formula_input.svg"/></td>
+                <td>读取满足最大堆条件的整数列</td>
+                <td class="code"></td>
+            </tr>
+            <tr>
+                <th class="scene_desc" colspan="3">元素的更新和向上调整堆</th>
+            </tr>
+            <tr>
+                <td class="symbol"><img src="formula_write.svg"/></td>
+                <td>将元素更新为更大的值</td>
+                <td class="code">A[i] &larr; value</td>
+            </tr>
+            <tr>
+                <td class="symbol"><img src="formula_select.svg"/></td>
+                <td>检查是否满足堆条件</td>
+                <td class="code">if A[i] &le; A[parent(i)]:</td>
+            </tr>
+            <tr>
+                <td class="symbol"><img src="formula_pair.svg"/></td>
+                <td>交换父子节点的值</td>
+                <td class="code">swap(A[i], A[parent(i)])</td>
+            </tr>
+            <tr>
+                <td class="symbol"><img src="formula_trace.svg"/></td>
+                <td>已更新的元素沿着根节点的方向移动</td>
+                <td class="code">i的轨迹</td>
+            </tr>
+            </tbody>
+        </table>
+
+        <br/>
+        <h4>动画</h4>
+        <div id="scene" class="scene">
+            <div><p><b class="scene_desc">输入及初始化</b><br/><img src="scene_0.svg" alt="向上调整堆| 输入及初始化"
+                                                                    title="向上调整堆| 输入及初始化"/></p></div>
+            <div><p><b class="scene_desc">元素的更新和向上调整堆</b><br/><img src="scene_1.svg"
+                                                                              alt="向上调整堆| 元素的更新和向上调整堆"
+                                                                              title="向上调整堆| 元素的更新和向上调整堆"/>
+            </p></div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+

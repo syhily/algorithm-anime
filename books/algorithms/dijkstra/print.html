@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>迪杰斯特拉算法（优先队列） | 动画算法与数据结构</title>
+    <link rel="stylesheet" href="/asserts/stylesheets/print.css" type="text/css" media="all"/>
+</head>
+<body>
+<div class="wrapper">
+    <h3>迪杰斯特拉算法（优先队列） | <a href="/">动画算法与数据结构</a></h3>
+
+    <div id="content" class="content">
+        <h4>符号</h4>
+
+        <table class="items" cellspacing="0">
+            <tbody id="variable">
+            <tr>
+                <th class="scene_desc" colspan="3">数据</th>
+            </tr>
+            <tr>
+                <td class="symbol"><img src="variable_dist.svg"/></td>
+                <td>从起点到各节点的暂定最短距离</td>
+                <td class="code">dist</td>
+            </tr>
+            <tr>
+                <td class="symbol"><img src="variable_nodeId.svg"/></td>
+                <td>节点编号</td>
+                <td class="code">nodeId</td>
+            </tr>
+            <tr>
+                <td class="symbol"><img src="variable_parent.svg"/></td>
+                <td>在最短路径树中的父节点</td>
+                <td class="code">parent</td>
+            </tr>
+            <tr>
+                <td class="symbol"><img src="variable_weight.svg"/></td>
+                <td>节点之间的距离</td>
+                <td class="code">weight</td>
+            </tr>
+            </tbody>
+        </table>
+        <br/>
+        <table class="items" cellspacing="0">
+            <tbody id="formula">
+            <tr>
+                <th class="scene_desc" colspan="3">起点的确定</th>
+            </tr>
+            <tr>
+                <td class="symbol"><img src="formula_source.svg"/></td>
+                <td>将起点的最短距离初始化为 0</td>
+                <td class="code">dist[s] &larr; 0</td>
+            </tr>
+            <tr>
+                <td class="symbol"><img src="formula_others.svg"/></td>
+                <td>将其他节点的暂定距离初始化为大值</td>
+                <td class="code">dist[v] &larr; INF</td>
+            </tr>
+            <tr>
+                <th class="scene_desc" colspan="3">最短路径树的构建</th>
+            </tr>
+            <tr>
+                <td class="symbol"><img src="formula_u.svg"/></td>
+                <td>指向从堆中取出的最优的节点</td>
+                <td class="code">u</td>
+            </tr>
+            <tr>
+                <td class="symbol"><img src="formula_target.svg"/></td>
+                <td>访问相邻节点，更新距离</td>
+                <td class="code">if dist[e.v] &gt; dist[u] + e.weight:<br>&nbsp;&nbsp;&nbsp;&nbsp;dist[e.v] &larr;
+                    dist[u] + e.weight<br>&nbsp;&nbsp;&nbsp;&nbsp;将 (dist[e.v], e.v) 插入 que<br>&nbsp;&nbsp;&nbsp;&nbsp;parent[e.v]
+                    &larr; u
+                </td>
+            </tr>
+            <tr>
+                <td class="symbol"><img src="formula_edges.svg"/></td>
+                <td>表示最短路径树的暂定边</td>
+                <td class="code">(v, parent[v])</td>
+            </tr>
+            <tr>
+                <td class="symbol"><img src="formula_finished.svg"/></td>
+                <td>扩展最短路径树</td>
+                <td class="code">T 中包含的节点</td>
+            </tr>
+            <tr>
+                <th class="scene_desc" colspan="3">最短路径树的输出</th>
+            </tr>
+            <tr>
+                <td class="symbol"><img src="formula_all.svg"/></td>
+                <td>基于父节点的信息构建最短路径树</td>
+                <td class="code"></td>
+            </tr>
+            </tbody>
+        </table>
+
+        <br/>
+        <h4>动画</h4>
+        <div id="scene" class="scene">
+            <div><p><b class="scene_desc">起点的确定</b><br/><img src="scene_0.svg"
+                                                                  alt="迪杰斯特拉算法（优先队列） | 起点的确定"
+                                                                  title="迪杰斯特拉算法（优先队列） | 起点的确定"/></p>
+            </div>
+            <div><p><b class="scene_desc">最短路径树的构建</b><br/><img src="scene_1.svg"
+                                                                        alt="迪杰斯特拉算法（优先队列） | 最短路径树的构建"
+                                                                        title="迪杰斯特拉算法（优先队列） | 最短路径树的构建"/>
+            </p></div>
+            <div><p><b class="scene_desc">最短路径树的输出</b><br/><img src="scene_2.svg"
+                                                                        alt="迪杰斯特拉算法（优先队列） | 最短路径树的输出"
+                                                                        title="迪杰斯特拉算法（优先队列） | 最短路径树的输出"/>
+            </p></div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+

@@ -1,0 +1,27 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>动画算法与数据结构</title>
+    <link rel="stylesheet" href="/asserts/stylesheets/main.css" type="text/css" media="all"/>
+</head>
+
+<div class="pseudo_code">
+
+
+<pre>
+countingSort(A, B, N):
+    C # 大小为 K+1 的数组
+
+    for i &larr; 0 to N-1:
+        C[A[i]]++
+
+    for i &larr; 1 to K:
+        C[i] &larr; C[i] + C[i-1]
+
+    for i &larr; N-1 downto 0:
+        C[A[i]]--
+        B[C[A[i]]] &larr; A[i]
+</pre>
+</div>
+</body>
+</html>

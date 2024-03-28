@@ -1,0 +1,32 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>动画算法与数据结构</title>
+    <link rel="stylesheet" href="/asserts/stylesheets/main.css" type="text/css" media="all"/>
+</head>
+
+<div class="pseudo_code">
+<pre>
+A &larr; 整数列
+
+for i &larr; 0 to N/2 - 1:
+    j &larr; N-i-1   
+    swap(A[i], A[j])
+
+输出 A
+</pre>
+</div>
+
+
+<div class="pseudo_code">
+<pre>
+# 反转数组 A 的区间 [l, r)
+reverse(A, l, r): 
+    for i &larr; l to l + (r-l)/2 - 1:
+        j &larr; r - (i-l) - 1
+        swap(A[i], A[j])
+</pre>
+</div>
+
+</body>
+</html>

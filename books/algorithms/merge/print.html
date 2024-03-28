@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>合并 | 动画算法与数据结构</title>
+    <link rel="stylesheet" href="/asserts/stylesheets/print.css" type="text/css" media="all"/>
+</head>
+<body>
+<div class="wrapper">
+    <h3>合并 | <a href="/">动画算法与数据结构</a></h3>
+
+    <div id="content" class="content">
+        <h4>符号</h4>
+
+        <table class="items" cellspacing="0">
+            <tbody id="variable">
+            <tr>
+                <th class="scene_desc" colspan="3">数据</th>
+            </tr>
+            <tr>
+                <td class="symbol"><img src="variable_A.svg"/></td>
+                <td>整数列</td>
+                <td class="code">A</td>
+            </tr>
+            <tr>
+                <td class="symbol"><img src="variable_T.svg"/></td>
+                <td>临时存储元素的整数列</td>
+                <td class="code">T</td>
+            </tr>
+            </tbody>
+        </table>
+        <br/>
+        <table class="items" cellspacing="0">
+            <tbody id="formula">
+            <tr>
+                <th class="scene_desc" colspan="3">输入和数据的临时保存</th>
+            </tr>
+            <tr>
+                <td class="symbol"><img src="formula_lw.svg"/></td>
+                <td>临时保存输入数据</td>
+                <td class="code"></td>
+            </tr>
+            <tr>
+                <td class="symbol"><img src="formula_rw.svg"/></td>
+                <td>反转后半部分</td>
+                <td class="code"></td>
+            </tr>
+            <tr>
+                <th class="scene_desc" colspan="3">合并</th>
+            </tr>
+            <tr>
+                <td class="symbol"><img src="formula_select.svg"/></td>
+                <td>判断两个部分开头的值哪个更小</td>
+                <td class="code">if T[i] &le; T[j]:</td>
+            </tr>
+            <tr>
+                <td class="symbol"><img src="formula_k.svg"/></td>
+                <td>返回选择的元素</td>
+                <td class="code">A[k] &larr; T[?]</td>
+            </tr>
+            <tr>
+                <td class="symbol"><img src="formula_di.svg"/></td>
+                <td>指向前半部分的当前元素</td>
+                <td class="code">i</td>
+            </tr>
+            <tr>
+                <td class="symbol"><img src="formula_dj.svg"/></td>
+                <td>指向后半部分的当前元素</td>
+                <td class="code">j</td>
+            </tr>
+            <tr>
+                <td class="symbol"><img src="formula_sorted.svg"/></td>
+                <td>扩展已排序部分的区间</td>
+                <td class="code">区间[l, k]</td>
+            </tr>
+            <tr>
+                <th class="scene_desc" colspan="3">输出</th>
+            </tr>
+            <tr>
+                <td class="symbol"><img src="formula_out.svg"/></td>
+                <td>输出已排序的整数列</td>
+                <td class="code"></td>
+            </tr>
+            </tbody>
+        </table>
+
+        <br/>
+        <h4>动画</h4>
+        <div id="scene" class="scene">
+            <div><p><b class="scene_desc">输入和数据的临时保存</b><br/><img src="scene_0.svg"
+                                                                            alt="合并 | 输入和数据的临时保存"
+                                                                            title="合并 | 输入和数据的临时保存"/></p>
+            </div>
+            <div><p><b class="scene_desc">合并</b><br/><img src="scene_1.svg" alt="合并 | 合并" title="合并 | 合并"/>
+            </p></div>
+            <div><p><b class="scene_desc">输出</b><br/><img src="scene_2.svg" alt="合并 | 输出" title="合并 | 输出"/>
+            </p></div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+

@@ -1,0 +1,36 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>动画算法与数据结构</title>
+    <link rel="stylesheet" href="/asserts/stylesheets/main.css" type="text/css" media="all"/>
+</head>
+
+<div class="pseudo_code">
+
+<pre>
+rects &larr; 矩形的列表
+
+# 叠加矩形
+for rect in rects:
+    x1 = rect.左上顶点.x
+    y1 = rect.左上顶点.y
+    x2 = rect.右下顶点.x
+    y2 = rect.右下顶点.y
+    A[x1][y1]++
+    A[x2][y2]++
+    A[x1][y2]--
+    A[x2][y1]--
+
+# 水平方向的累积和
+for x &larr; 1 to N-1:
+    for y &larr; 0 to M-1:
+        A[x][y] &larr; A[x][y] + A[x-1][y]
+
+# 垂直方向的累积和
+for y &larr; 1 to M-1:
+    for x &larr; 0 to N-1:
+        A[x][y] &larr; A[x][y] + A[x][y-1]
+</pre>
+</div>
+</body>
+</html>

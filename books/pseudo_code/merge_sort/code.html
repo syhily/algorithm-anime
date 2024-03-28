@@ -1,0 +1,26 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>动画算法与数据结构</title>
+    <link rel="stylesheet" href="/asserts/stylesheets/main.css" type="text/css" media="all"/>
+</head>
+
+<div class="pseudo_code">
+
+<pre>
+# 对数组 A 的区间 [l, r) 进行合并排序
+mergeSort(A, l, r):
+    if l+1 < r:
+        m &larr; (l+r)/2
+        mergeSort(A, l, m)
+        mergeSort(A, m, r)
+        merge(A, l, m, r)
+
+	     
+# 对有 N 个元素的整个数组 A 进行合并排序
+A &larr; 输入的整数列
+mergeSort(A, 0, N)
+</pre>
+</div>
+</body>
+</html>

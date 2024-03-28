@@ -1,0 +1,36 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>动画算法与数据结构</title>
+    <link rel="stylesheet" href="/asserts/stylesheets/main.css" type="text/css" media="all"/>
+</head>
+
+<div class="pseudo_code">
+
+<pre>    
+# 对图 g 拓扑排序
+topologicalSort(g):
+    Queue que
+    
+    # 计算入度
+    for u &larr; 0 to g.N - 1:
+        for v in g.adjLists[u]:
+            deg[v]++
+
+    for v &larr; 0 to g.N - 1:
+        if deg[v] = 0:
+            que.enqueue(v)
+
+    t &larr; 1
+    while not que.empty():
+        u &larr; que.dequeue()
+        order[u] &larr; t++
+        for v in g.adjLists[u]:
+            deg[v]--
+            if deg[v] = 0:
+                q.enqueue(v)
+</pre>
+</div>
+</body>
+</html>
+

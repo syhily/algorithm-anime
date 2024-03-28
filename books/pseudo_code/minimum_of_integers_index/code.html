@@ -1,0 +1,41 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>动画算法与数据结构</title>
+    <link rel="stylesheet" href="/asserts/stylesheets/main.css" type="text/css" media="all"/>
+</head>
+
+<div class="pseudo_code">
+<pre>
+# 输入
+A &larr; 整数列
+
+# 更新最小值的位置
+mini &larr; 0
+
+for i &larr; 1 to N-1:
+    if A[i] < A[mini]:
+        mini &larr; i
+
+输出 mini
+</pre>
+</div>
+
+<p>
+    实现为函数的伪代码如下所示。
+</p>
+
+<div class="pseudo_code">
+<pre>
+# 从数组 A 的区间 [b, e) 的元素中找出最小值的位置
+minimum(A, b, e):
+    mini &larr; b
+    for i &larr; b to e-1:
+        if A[i] < A[mini]:
+            mini &larr; i
+
+    return mini
+</pre>
+</div>
+</body>
+</html>

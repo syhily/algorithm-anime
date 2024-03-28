@@ -1,0 +1,32 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>动画算法与数据结构</title>
+    <link rel="stylesheet" href="/asserts/stylesheets/main.css" type="text/css" media="all"/>
+</head>
+
+<div class="pseudo_code">
+
+
+<pre>
+# 对图 g 以节点 s 为起点进行广度优先搜索
+breadthFirstSearch(g, s):
+    Queue que
+    
+    for i &larr; 0 to g.N - 1:
+        dist[i] &larr; INF
+
+    que.enqueue(s)
+    dist[s] &larr; 0
+    
+    while not que.empty():
+        u &larr; que.dequeue()
+        for v in g.adjLists[u]:
+            if dist[v] = INF:
+                dist[v] &larr; dist[u] + 1
+                que.enqueue(v)
+</pre>
+
+</div>
+</body>
+</html>

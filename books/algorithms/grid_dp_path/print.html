@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>网格中的动态规划 | 动画算法与数据结构</title>
+    <link rel="stylesheet" href="/asserts/stylesheets/print.css" type="text/css" media="all"/>
+</head>
+<body>
+<div class="wrapper">
+    <h3>网格中的动态规划 | <a href="/">动画算法与数据结构</a></h3>
+
+    <div id="content" class="content">
+        <h4>符号</h4>
+
+        <table class="items" cellspacing="0">
+            <tbody id="variable">
+            <tr>
+                <th class="scene_desc" colspan="3">数据</th>
+            </tr>
+            <tr>
+                <td class="symbol"><img src="variable_P.svg"/></td>
+                <td>从起点出发的最短路径数</td>
+                <td class="code">P</td>
+            </tr>
+            </tbody>
+        </table>
+        <br/>
+        <table class="items" cellspacing="0">
+            <tbody id="formula">
+            <tr>
+                <th class="scene_desc" colspan="3">输入</th>
+            </tr>
+            <tr>
+                <td class="symbol"><img src="formula_inp.svg"/></td>
+                <td>初始化从起点到起点的最短路径数</td>
+                <td class="code"></td>
+            </tr>
+            <tr>
+                <th class="scene_desc" colspan="3">排序</th>
+            </tr>
+            <tr>
+                <td class="symbol"><img src="formula_cur.svg"/></td>
+                <td>到当前点的最短路径数是到北侧点的路径数与到西侧点的路径数之和</td>
+                <td class="code"></td>
+            </tr>
+            <tr>
+                <th class="scene_desc" colspan="3">输出</th>
+            </tr>
+            <tr>
+                <td class="symbol"><img src="formula_outp.svg"/></td>
+                <td>输出从起点到终点的最短路径数</td>
+                <td class="code"></td>
+            </tr>
+            </tbody>
+        </table>
+
+        <br/>
+        <h4>动画</h4>
+        <div id="scene" class="scene">
+            <div><p><b class="scene_desc">输入</b><br/><img src="scene_0.svg" alt="网格中的动态规划 | 输入"
+                                                            title="网格中的动态规划 | 输入"/></p></div>
+            <div><p><b class="scene_desc">排序</b><br/><img src="scene_1.svg" alt="网格中的动态规划 | 整列"
+                                                            title="网格中的动态规划 | 整列"/></p></div>
+            <div><p><b class="scene_desc">输出</b><br/><img src="scene_2.svg" alt="网格中的动态规划 | 输出"
+                                                            title="网格中的动态规划 | 输出"/></p></div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+

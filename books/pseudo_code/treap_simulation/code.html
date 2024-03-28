@@ -1,0 +1,77 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>动画算法与数据结构</title>
+    <link rel="stylesheet" href="/asserts/stylesheets/main.css" type="text/css" media="all"/>
+</head>
+
+<div class="pseudo_code">
+
+
+<pre>
+class Node:
+    Node *left
+    Node *right
+    key
+    pri
+
+class Treap:
+    Node *root
+
+    # 递归搜索插入位置
+    insert(Node *t, key, pri):
+        # 到达叶子节点时，生成并返回节点
+        if t = NULL: 
+            return Node(key, pri) # 返回指针
+
+        # 忽略重复的键
+        if key = t.key: 
+            return t
+
+        if key &lt; t.key: # 移动到左子节点
+            # 返回的节点成为左子节点
+            t.left &larr; insert(t.left, key, pri) 
+            # 如果该节点的优先级高，通过右旋转提升该节点
+            if t.pri &lt; t.left.pri:
+                t &larr; rightRotate(t)
+        else: # 移动到右子节点
+            # 返回的节点成为右子节点
+            t.right &larr; insert(t.right, key, pri)
+            # 如果该节点的优先级高，通过左旋转提升该节点
+            if t.pri &lt; t.right.pri:
+                t &larr; leftRotate(t)
+
+        return t
+
+    # 递归搜索对象
+    erase(Node *t, key):
+        if t = NULL:
+            return NULL
+
+        if key = t.key # t 是删除对象
+            if t.left = NULL and t.right = NULL: # t 是叶子节点
+                return NULL
+            else if t.left = NULL:               # t 只有一个右子节点
+                t &larr; leftRotate(t)
+            else if t.right = NULL:              # t 只有一个左子节点
+                t &larr; rightRotate(t)
+            else:                                # t 有两个子节点
+                # 提升优先级高的子节点
+                if t.left.pri &gt; t.right.pri
+                    t &larr; rightRotate(t)
+                else:
+                    t &larr; leftRotate(t)
+            return erase(t, key)
+
+         # 递归搜索对象
+         if key &lt; t.key:
+             t.left &larr; erase(t.left, key)
+         else:
+             t.right &larr; erase(t.right, key)
+
+         return t
+</pre>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,29 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>动画算法与数据结构</title>
+    <link rel="stylesheet" href="/asserts/stylesheets/main.css" type="text/css" media="all"/>
+</head>
+
+<div class="pseudo_code">
+<pre>
+# 在数组 A 中插入元素 i（第 i 个元素）
+# 区间 [0, i) 按升序排列
+insertion(A, i):
+    j &larr; i - 1
+    t &larr; A[i]
+
+    while True: # 无限循环，直到满足条件退出
+        if j < 0:
+            break
+        if !(j &ge; 0 and A[j] > t):
+            break
+        A[j+1] &larr; A[j]
+        j &larr; j - 1
+
+    A[j+1] &larr; t
+</pre>
+</div>
+
+</body>
+</html>

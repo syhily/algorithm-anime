@@ -1,0 +1,24 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>动画算法与数据结构</title>
+    <link rel="stylesheet" href="/asserts/stylesheets/main.css" type="text/css" media="all"/>
+</head>
+
+<div class="pseudo_code">
+
+<pre>
+Q &larr; 线段列表
+    
+for segment in Q:
+    b &larr; segment.begin.x  # 起点的x坐标
+    e &larr; segment.end.x    # 终点的x坐标
+    A[b]++
+    A[e]--
+
+for i &larr; 1 to N-1:
+    A[i] &larr; A[i] + A[i-1]
+</pre>
+</div>
+</body>
+</html>

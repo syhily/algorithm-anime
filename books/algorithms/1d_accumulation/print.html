@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>一维累积和 | 动画算法与数据结构</title>
+    <link rel="stylesheet" href="/asserts/stylesheets/print.css" type="text/css" media="all"/>
+</head>
+<body>
+<div class="wrapper">
+    <h3>一维累积和 | <a href="/">动画算法与数据结构</a></h3>
+
+    <div id="content" class="content">
+        <h4>符号</h4>
+
+        <table class="items" cellspacing="0">
+            <tbody id="variable">
+            <tr>
+                <th class="scene_desc" colspan="3">数据</th>
+            </tr>
+            <tr>
+                <td class="symbol"><img src="variable_A.svg"/></td>
+                <td>叠加的数量</td>
+                <td class="code">A</td>
+            </tr>
+            </tbody>
+        </table>
+        <br/>
+        <table class="items" cellspacing="0">
+            <tbody id="formula">
+            <tr>
+                <th class="scene_desc" colspan="3">添加线段</th>
+            </tr>
+            <tr>
+                <td class="symbol"><img src="formula_bw.svg"/></td>
+                <td>与线段起点相对应的元素值加 1</td>
+                <td class="code">A[b]++</td>
+            </tr>
+            <tr>
+                <td class="symbol"><img src="formula_ew.svg"/></td>
+                <td>与线段终点相对应的元素值减 1</td>
+                <td class="code">A[e]--</td>
+            </tr>
+            <tr>
+                <th class="scene_desc" colspan="3">计算累积和</th>
+            </tr>
+            <tr>
+                <td class="symbol"><img src="formula_cur.svg"/></td>
+                <td>与前一个元素相加</td>
+                <td class="code">A[i] &larr; A[i] + A[i-1]</td>
+            </tr>
+            </tbody>
+        </table>
+
+        <br/>
+        <h4>动画</h4>
+        <div id="scene" class="scene">
+            <div><p><b class="scene_desc">添加线段</b><br/><img src="scene_0.svg" alt="一维累积和 | 添加线段"
+                                                                title="一维累积和 | 添加线段"/></p></div>
+            <div><p><b class="scene_desc">计算累积和</b><br/><img src="scene_1.svg" alt="一维累积和 | 计算累积和"
+                                                                  title="一维累积和 | 计算累积和"/></p></div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+

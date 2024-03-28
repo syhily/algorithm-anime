@@ -1,0 +1,45 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>动画算法与数据结构</title>
+    <link rel="stylesheet" href="/asserts/stylesheets/main.css" type="text/css" media="all"/>
+</head>
+
+<div class="pseudo_code">
+
+<pre>
+# T: 最短路径树
+# 求图 g 中从起点 s 开始的最短路径
+# g.N: 图g的节点数
+dijkstra(g, s):
+    for v &larr; 0 to g.N - 1:
+        dist[v] &larr; INF
+        parent[v] &larr; NIL # 没有父节点的状态
+
+    清空T
+    dist[s] &larr; 0
+
+    while True:
+        u &larr; NIL
+        minv &larr; INF
+        # find minimum
+        for v &larr; 0 to g.N - 1:
+            if v 在 T 中: continue
+            if dist[v] < minv:
+                u &larr; v
+                minv &larr; dist[v]
+ 
+        if u = NIL: break
+        将 u 加入 T
+  
+        for v &larr; 0 to g.N - 1:
+            if weight[u][v] = INF: continue
+            if v 在 T 中: continue
+            if dist[v] > dist[u] + weight[u][v]:
+                dist[v] &larr; dist[u] + weight[u][v]
+                parent[v] &larr; u
+</pre>
+</div>
+
+</body>
+</html>

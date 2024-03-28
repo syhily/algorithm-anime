@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>按秩合并 | 动画算法与数据结构</title>
+    <link rel="stylesheet" href="/asserts/stylesheets/print.css" type="text/css" media="all"/>
+</head>
+<body>
+<div class="wrapper">
+    <h3>按秩合并 | <a href="/">动画算法与数据结构</a></h3>
+
+    <div id="content" class="content">
+        <h4>符号</h4>
+
+        <table class="items" cellspacing="0">
+            <tbody id="variable">
+            <tr>
+                <th class="scene_desc" colspan="3">数据</th>
+            </tr>
+            <tr>
+                <td class="symbol"><img src="variable_rank.svg"/></td>
+                <td>秩（节点的高度）</td>
+                <td class="code">rank</td>
+            </tr>
+            </tbody>
+        </table>
+        <br/>
+        <table class="items" cellspacing="0">
+            <tbody id="formula">
+            <tr>
+                <th class="scene_desc" colspan="3">合併</th>
+            </tr>
+            <tr>
+                <td class="symbol"><img src="formula_select.svg"/></td>
+                <td>比较秩</td>
+                <td class="code">rank[x] &gt; rank[y]:</td>
+            </tr>
+            <tr>
+                <td class="symbol"><img src="formula_update_rank.svg"/></td>
+                <td>将秩加 1</td>
+                <td class="code">rank[y]++</td>
+            </tr>
+            <tr>
+                <td class="symbol"><img src="formula_update.svg"/></td>
+                <td>更新父节点</td>
+                <td class="code">parent[y] &larr; ?</td>
+            </tr>
+            </tbody>
+        </table>
+
+        <br/>
+        <h4>动画</h4>
+        <div id="scene" class="scene">
+            <div><p><b class="scene_desc">合併</b><br/><img src="scene_0.svg" alt="按秩合并 | 合併"
+                                                            title="按秩合并 | 合併"/></p></div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+

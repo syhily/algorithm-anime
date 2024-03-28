@@ -1,0 +1,31 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>动画算法与数据结构</title>
+    <link rel="stylesheet" href="/asserts/stylesheets/main.css" type="text/css" media="all"/>
+</head>
+
+<div class="pseudo_code">
+
+<pre>
+BinaryTree t &larr; 生成二叉树
+  
+# 从 s 开始层序遍历二叉树 t 的节点
+levelorder(s):
+    Queue que
+    que.push(s)
+    time &larr; 1
+    while not que.empty():
+        u &larr; que.dequeue()
+        L[u] &larr; time++
+        if t.nodes[u].left &ne; NIL:
+            que.push(t.nodes[u].left)
+        if t.nodes[u].right &ne; NIL:
+            que.push(t.nodes[u].right)
+
+# 从二叉树的根节点开始访问
+levelorder(t.root)
+</pre>
+</div>
+</body>
+</html>

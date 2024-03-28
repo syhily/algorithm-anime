@@ -1,0 +1,41 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>动画算法与数据结构</title>
+    <link rel="stylesheet" href="/asserts/stylesheets/main.css" type="text/css" media="all"/>
+</head>
+
+<div class="pseudo_code">
+
+<pre>
+# 实现了队列操作的类
+class Queue
+    Q          # 保存队列元素的数组
+    head       # 指向队列开头的箭头
+    tail       # 指向队列末尾的箭头
+
+    init():
+        head &larr; 0
+        tail &larr; 0
+  
+    enqueue(x):
+        Q[tail++] &larr; x       # 将 tail 位置赋值为 x 后，将 tail 加 1
+
+    dequeue():
+        return Q[head++]         # 返回 Q[head] 的值后，将 head 加 1
+
+    empty():
+        return head = tail       # head 和 tail 相等时返回 True
+
+# 队列操作模拟
+Queue que(6)
+que.enqueue(4)
+que.enqueue(8)
+que.enqueue(1)
+que.dequeue()
+que.enqueue(7)
+que.dequeue()
+</pre>
+</div>
+</body>
+</html>

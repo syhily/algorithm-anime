@@ -1,0 +1,512 @@
+.flash_g {
+    animation-name: Flash1;
+    animation-duration: 0.5s;
+    animation-delay: 0s;
+    animation-iteration-count: 2;
+}
+
+@keyframes Flash1 {
+    50% {
+        opacity: 0;
+    }
+}
+
+.for_print {
+    display: none;
+}
+
+body {
+    background-color: #ffffff;
+    font-family: "SimSun", "宋体", serif;
+    margin-top: 0;
+    margin-left: 0;
+}
+
+.wrapper {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.anim_container {
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 64px;
+}
+
+.tile_container {
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 64px;
+}
+
+.var_formula_container {
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 64px;
+}
+
+.header {
+    width: 100%;
+    background-color: #eaeaea;
+    height: 60px;
+    position: fixed;
+    z-index: 3;
+}
+
+.header table {
+    width: 100%;
+    height: 100%;
+}
+
+.header td {
+    vertical-align: middle;
+}
+
+.content {
+    width: 100%;
+    padding-left: 8px;
+    padding-right: 8px;
+    margin: 0 auto;
+}
+
+.tile_selector {
+    background-color: #a0a0a0;
+    width: 100%;
+    margin: 0 auto;
+    height: 72px;
+    position: fixed;
+    line-height: 64px;
+    text-align: center;
+    horizontal-align: center;
+    z-index: 3;
+    bottom: 0;
+}
+
+.tile_selector table {
+    width: 100%;
+    height: 100%;
+}
+
+.tileview {
+    width: 96%;
+    margin: 0 auto;
+}
+
+.tiletable {
+    width: 100%;
+    border-spacing: 0px 16px;
+}
+
+.tile_frame {
+    border: 1px solid #c0c0c0;
+}
+
+.tile_next {
+    width: 28px;
+}
+
+.controller {
+    background-color: #a0a0a0;
+    width: 100%;
+    height: 72px;
+    line-height: 80px;
+    text-align: center;
+    vertical-align: middle;
+    horizontal-align: center;
+    position: fixed;
+    bottom: 0;
+}
+
+.progress_bar {
+    height: 20px;
+    width: 100%;
+    background-color: #ffffff;
+    position: fixed;
+    bottom: 72px;
+}
+
+.progress_bar table {
+    width: 100%;
+}
+
+.progress_bar td {
+    text-align: center;
+    font-size: 8pt;
+}
+
+.controller table {
+    width: 100%;
+    height: 100%;
+}
+
+.cbutton {
+    text-align: center;
+    width: 20%;
+}
+
+.cbutton_right {
+    text-align: right;
+    padding-right: 8px;
+    width: 20%;
+}
+
+.cbutton_left {
+    text-align: left;
+    padding-right: 8px;
+    width: 20%;
+}
+
+.mbutton {
+    text-align: center;
+    padding-right: 12px;
+}
+
+.icon_home {
+    background-image: url("/asserts/icons/controller/icon_home.svg");
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    horizontal-aligh: right;
+    height: 3em;
+    width: 3em;
+    margin-left: 8px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.icon_help {
+    background-image: url("/asserts/icons/controller/icon_help.svg");
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    horizontal-aligh: right;
+    height: 3em;
+    width: 3em;
+    margin-left: 8px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.icon_anim_mode {
+    background-image: url("/asserts/icons/controller/icon_anim_mode.svg");
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    height: 3em;
+    width: 3em;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center center;
+}
+
+.icon_tile_mode {
+    background-image: url("/asserts/icons/controller/icon_tile_mode.svg");
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    height: 3em;
+    width: 3em;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center center;
+}
+
+.icon_anim_mode_white {
+    background-image: url("/asserts/icons/controller/icon_anim_mode_white.svg");
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    height: 3em;
+    width: 3em;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center center;
+}
+
+.icon_tile_mode_white {
+    background-image: url("/asserts/icons/controller/icon_tile_mode_white.svg");
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    height: 3em;
+    width: 3em;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center center;
+}
+
+.icon_space_mode {
+    background-image: url("/asserts/icons/controller/icon_space_mode.svg");
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    height: 3em;
+    width: 3em;
+    background-repeat: no-repeat;
+    background-size: 80% 80%;
+    background-position: center center;
+}
+
+.icon_var_formula_mode {
+    background-image: url("/asserts/icons/controller/icon_var_formula_mode.svg");
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    height: 3em;
+    width: 3em;
+    background-repeat: no-repeat;
+    background-size: 80% 80%;
+    background-position: center center;
+}
+
+.icon_play {
+    background-image: url("/asserts/icons/controller/icon_play.svg");
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    height: 3.5em;
+    width: 3.5em;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.icon_stop {
+    background-image: url("/asserts/icons/controller/icon_stop.svg");
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    height: 3em;
+    width: 3em;
+    margin: 0.5em;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.icon_left_arrow {
+    background-image: url("/asserts/icons/controller/icon_left_arrow.svg");
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    height: 3em;
+    width: 3em;
+    margin: 0.5em;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.icon_right_arrow {
+    background-image: url("/asserts/icons/controller/icon_right_arrow.svg");
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    height: 3em;
+    width: 3em;
+    margin: 0.5em;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.icon_tile_1 {
+    background-image: url("/asserts/icons/controller/icon_tile_1.svg");
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    height: 3em;
+    width: 3em;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.icon_tile_2 {
+    background-image: url("/asserts/icons/controller/icon_tile_2.svg");
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    height: 3em;
+    width: 3em;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.icon_tile_3 {
+    background-image: url("/asserts/icons/controller/icon_tile_3.svg");
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    height: 3em;
+    width: 3em;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.icon_next {
+    background-image: url("/asserts/icons/controller/icon_next.svg");
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    height: 2em;
+    width: 2em;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.icon_next_vertical {
+    background-image: url("/asserts/icons/controller/icon_next_vertical.svg");
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    height: 2em;
+    width: 2em;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+
+table.items {
+    border: 0px solid #d0d0d0;
+    padding-left: 24px;
+    padding-right: 24px;
+    width: 100%;
+}
+
+table.items td {
+    background: #ffffff;
+    border-bottom: 1px solid #d0d0d0;
+    padding: 4px;
+    font-size: 11pt;
+}
+
+table.items th {
+    background: #ffffff;
+    border-bottom: 1px solid #d0d0d0;
+    padding: 4px;
+    padding-top: 16px;
+    font-size: 10pt;
+}
+
+td.symbol {
+    text-align: center;
+    width: 40px;
+}
+
+th.scene_desc {
+    border: 0px solid #ffffff;
+    text-align: left;
+}
+
+td.code {
+    text-align: left;
+    width: 280px;
+    font-family: Courier New;
+}
+
+/* 2.0 */
+.popup {
+    display: none;
+    height: 100vh;
+    width: 100%;
+    background: black;
+    opacity: 0.95;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.pcontent {
+    background: #fff;
+    padding: 14px 28px 28px;
+    width: 86%;
+    margin: 0 auto;
+}
+
+.show {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon_custom {
+    background-image: url("/asserts/icons/controller/icon_star.svg");
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    height: 3em;
+    width: 3em;
+    margin: 0.5em;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+#selectorTable {
+    width: 100%;
+}
+
+
+#userInputArea {
+    width: 100%;
+    height: 100%;
+    min-height: 100px;
+    resize: vertical;
+    font-family: Courier New, serif;
+    border: 1px solid #d0d0d0;
+    font-size: 28px;
+    padding: 4px;
+}
+
+#messageDescription {
+    width: 100%;
+    font-family: "SimSun", "宋体", serif;
+    font-size: 18px;
+    text-align: left;
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+#messageServer {
+    width: 100%;
+    color: #888888;
+    font-family: "SimSun", "宋体", serif;
+    font-size: 18px;
+    text-align: left;
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+.selectButton {
+    margin: 4px;
+    width: 32px;
+    height: 32px;
+    padding: 8px;
+    background-color: #82E0AA;
+    border: 0px solid #ffffff;
+    color: #ffffff;
+    font-size: 14px;
+}
+
+.selectButton:hover {
+    background-color: #ABEBC6;
+}
+
+#createButton {
+    padding: 12px;
+    border: 0px solid #ffffff;
+    background-color: #28B463;
+    color: #ffffff;
+    font-size: 20px;
+}
+
+#createButton:hover {
+    background-color: #2ECC71;
+}
+
+#cancelButton {
+    padding: 12px;
+    border: 0px solid #ffffff;
+    background-color: #e0e0e0;
+    font-size: 20px;
+}
+
+#cancelButton:hover {
+    background-color: #f0f0f0;
+}

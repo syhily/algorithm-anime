@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>合并查找树 | 动画算法与数据结构</title>
+    <link rel="stylesheet" href="/asserts/stylesheets/print.css" type="text/css" media="all"/>
+</head>
+<body>
+<div class="wrapper">
+    <h3>合并查找树 | <a href="/">动画算法与数据结构</a></h3>
+
+    <div id="content" class="content">
+        <h4>符号</h4>
+
+        <table class="items" cellspacing="0">
+            <tbody id="variable">
+            <tr>
+                <th class="scene_desc" colspan="3">数据</th>
+            </tr>
+            <tr>
+                <td class="symbol"><img src="variable_rank.svg"/></td>
+                <td>秩</td>
+                <td class="code">rank</td>
+            </tr>
+            </tbody>
+        </table>
+        <br/>
+        <table class="items" cellspacing="0">
+            <tbody id="formula">
+            <tr>
+                <th class="scene_desc" colspan="3">集合的合并</th>
+            </tr>
+            <tr>
+                <td class="symbol"><img src="formula_comp.svg"/></td>
+                <td>求给定的两个节点的根（代表）</td>
+                <td class="code">root1 &larr; findSet(x)<br>root2 &larr; findSet(y)</td>
+            </tr>
+            <tr>
+                <td class="symbol"><img src="formula_target.svg"/></td>
+                <td>指向合并的根（代表）</td>
+                <td class="code">root1, root2</td>
+            </tr>
+            <tr>
+                <td class="symbol"><img src="formula_select.svg"/></td>
+                <td>比较根的秩</td>
+                <td class="code">if rank[x] > rank[y]:</td>
+            </tr>
+            <tr>
+                <td class="symbol"><img src="formula_decision.svg"/></td>
+                <td>指向被选中的新的根（代表）</td>
+                <td class="code">x 或者 y</td>
+            </tr>
+            <tr>
+                <td class="symbol"><img src="formula_update_rank.svg"/></td>
+                <td>秩加 1</td>
+                <td class="code">rank[y]++</td>
+            </tr>
+            <tr>
+                <td class="symbol"><img src="formula_p.svg"/></td>
+                <td>修改父节点</td>
+                <td class="code">parent[?] &larr; ?</td>
+            </tr>
+            <tr>
+                <td class="symbol"><img src="formula_path.svg"/></td>
+                <td>进行路径压缩</td>
+                <td class="code">parent[x] &larr; findSet(parent[x]):</td>
+            </tr>
+            </tbody>
+        </table>
+
+        <br/>
+        <h4>动画</h4>
+        <div id="scene" class="scene">
+            <div><p><b class="scene_desc">集合的合并</b><br/><img src="scene_0.svg" alt="合并查找树 | 集合的合并"
+                                                                  title="合并查找树 | 集合的合并"/></p></div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+

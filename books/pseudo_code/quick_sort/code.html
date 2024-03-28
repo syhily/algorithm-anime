@@ -1,0 +1,25 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>动画算法与数据结构</title>
+    <link rel="stylesheet" href="/asserts/stylesheets/main.css" type="text/css" media="all"/>
+</head>
+
+<div class="pseudo_code">
+
+<pre>
+# 对数组 A 的区间 [l, r] 的元素排序
+quickSort(A, l, r):
+    if  l < r:
+        q &larr; partition(A, l, r)
+        quickSort(A, l, q-1)
+        quickSort(A, q+1, r)
+
+# 对有 N 个元素的整个数组 A 进行快速排序 	    
+A &larr; 输入的整数列
+quickSort(A, 0, N-1)
+</pre>
+</div>
+</body>
+</html>
+

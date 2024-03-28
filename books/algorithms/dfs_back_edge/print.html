@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>使用 DFS 进行环检测 | 动画算法与数据结构</title>
+    <link rel="stylesheet" href="/asserts/stylesheets/print.css" type="text/css" media="all"/>
+</head>
+<body>
+<div class="wrapper">
+    <h3>使用 DFS 进行环检测 | <a href="/">动画算法与数据结构</a></h3>
+
+    <div id="content" class="content">
+        <h4>符号</h4>
+
+        <table class="items" cellspacing="0">
+            <tbody id="variable">
+            <tr>
+                <th class="scene_desc" colspan="3">数据</th>
+            </tr>
+            <tr>
+                <td class="symbol"><img src="variable_color.svg"/></td>
+                <td>节点的访问状态</td>
+                <td class="code">color</td>
+            </tr>
+            </tbody>
+        </table>
+        <br/>
+        <table class="items" cellspacing="0">
+            <tbody id="formula">
+            <tr>
+                <th class="scene_desc" colspan="3">深度优先搜索</th>
+            </tr>
+            <tr>
+                <td class="symbol"><img src="formula_ui.svg"/></td>
+                <td>访问节点</td>
+                <td class="code">color[u] &larr; GRAY</td>
+            </tr>
+            <tr>
+                <td class="symbol"><img src="formula_fi.svg"/></td>
+                <td>完成对节点的访问</td>
+                <td class="code">color[u] &larr; BLACK</td>
+            </tr>
+            <tr>
+                <td class="symbol"><img src="formula_bi.svg"/></td>
+                <td>检测到回溯边</td>
+                <td class="code"></td>
+            </tr>
+            <tr>
+                <td class="symbol"><img src="formula_backEdge.svg"/></td>
+                <td>表示回溯边</td>
+                <td class="code"></td>
+            </tr>
+            <tr>
+                <td class="symbol"><img src="formula_visited.svg"/></td>
+                <td>扩展已访问节点的组的范围</td>
+                <td class="code">color 为 GRAY 的节点</td>
+            </tr>
+            <tr>
+                <td class="symbol"><img src="formula_finished.svg"/></td>
+                <td>扩展已完成访问的节点的组的范围</td>
+                <td class="code">color 为 BLACK 的节点</td>
+            </tr>
+            </tbody>
+        </table>
+
+        <br/>
+        <h4>动画</h4>
+        <div id="scene" class="scene">
+            <div><p><b class="scene_desc">深度优先搜索</b><br/><img src="scene_0.svg"
+                                                                    alt="使用 DFS 进行环检测 | 深度优先搜索"
+                                                                    title="使用 DFS 进行环检测 | 深度优先搜索"/></p>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+

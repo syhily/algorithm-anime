@@ -1,0 +1,57 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>动画算法与数据结构</title>
+    <link rel="stylesheet" href="/asserts/stylesheets/main.css" type="text/css" media="all"/>
+</head>
+
+<div class="pseudo_code">
+
+<pre>
+class Node:
+    Node *prev
+    Node *next
+    key
+
+class LinkedList:
+    Node *sentinel  # 哨兵
+
+    # 初始化为空链表
+    init():
+        sentinel &larr; 生成节点
+        sentinel.next &larr; sentinel  # 指向自身
+        sentinel.prev &larr; sentinel  # 指向自身
+
+    # 插入数据 data
+    insert(data):
+        # 生成节点，设置数据和指针
+        Node *x &larr; 生成节点
+        x.key &larr; data # 设置数据
+        x.next &larr; sentinel.next
+        x.prev &larr; sentinel
+        # 设置哨兵和原来的开头节点的指针
+        sentinel.next.prev &larr; x
+        sentinel.next &larr; x
+
+    # 搜索持有 k 的节点
+    listSearch(k):
+        Node *cur &larr; sentinel.next # 从哨兵的下一个元素开始追溯
+        while cur &ne; sentinel and cur.key &ne; k:
+            cur &larr; cur.next
+        return cur
+
+    deleteNode(Node *t):
+        if t = sentinel: return # 如果 t 是哨兵，则不处理
+        t.prev.next &larr; t.next
+        t.next.prev &larr; t.prev
+        释放 t 的内存
+
+    # 删除持有 k 的节点
+    deleteKey(k):
+        deleteNode(listSearch(k)) # 删除得到的节点
+
+</pre>
+</div>
+</body>
+</html>
+

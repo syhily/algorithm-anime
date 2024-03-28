@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>堆排序 | 动画算法与数据结构</title>
+    <link rel="stylesheet" href="/asserts/stylesheets/print.css" type="text/css" media="all"/>
+</head>
+<body>
+<div class="wrapper">
+    <h3>堆排序 | <a href="/">动画算法与数据结构</a></h3>
+
+    <div id="content" class="content">
+        <h4>符号</h4>
+
+        <table class="items" cellspacing="0">
+            <tbody id="variable">
+            <tr>
+                <th class="scene_desc" colspan="3">数据</th>
+            </tr>
+            <tr>
+                <td class="symbol"><img src="variable_A.svg"/></td>
+                <td>数列の列</td>
+                <td class="code">A</td>
+            </tr>
+            </tbody>
+        </table>
+        <br/>
+        <table class="items" cellspacing="0">
+            <tbody id="formula">
+            <tr>
+                <th class="scene_desc" colspan="3">输入</th>
+            </tr>
+            <tr>
+                <td class="symbol"><img src="formula_input.svg"/></td>
+                <td>输入整数列</td>
+                <td class="code"></td>
+            </tr>
+            <tr>
+                <th class="scene_desc" colspan="3">构建堆</th>
+            </tr>
+            <tr>
+                <td class="symbol"><img src="formula_downRotation.svg"/></td>
+                <td>对子树进行向下调整堆</td>
+                <td class="code">downHeap(A, i)</td>
+            </tr>
+            <tr>
+                <th class="scene_desc" colspan="3">交换和向下调整堆</th>
+            </tr>
+            <tr>
+                <td class="symbol"><img src="formula_downRotation.svg"/></td>
+                <td>从根节点开始进行向下调整堆</td>
+                <td class="code">downHeap(A, 0)</td>
+            </tr>
+            <tr>
+                <td class="symbol"><img src="formula_exchange.svg"/></td>
+                <td>交换根节点和末尾节点的值</td>
+                <td class="code">swap(A[0], A[heapSize-1])</td>
+            </tr>
+            <tr>
+                <td class="symbol"><img src="formula_heap.svg"/></td>
+                <td>缩小满足堆条件的未排序部分的区间</td>
+                <td class="code">区间[0, heapSize)</td>
+            </tr>
+            <tr>
+                <th class="scene_desc" colspan="3">输出</th>
+            </tr>
+            <tr>
+                <td class="symbol"><img src="formula_output.svg"/></td>
+                <td>输出已排序的整数列。</td>
+                <td class="code"></td>
+            </tr>
+            </tbody>
+        </table>
+
+        <br/>
+        <h4>动画</h4>
+        <div id="scene" class="scene">
+            <div><p><b class="scene_desc">输入</b><br/><img src="scene_0.svg" alt="堆排序 | 输入"
+                                                            title="堆排序 | 输入"/></p></div>
+            <div><p><b class="scene_desc">构建堆</b><br/><img src="scene_1.svg" alt="堆排序 | 构建堆"
+                                                              title="堆排序 | 构建堆"/></p></div>
+            <div><p><b class="scene_desc">交换和向下调整堆</b><br/><img src="scene_2.svg"
+                                                                        alt="堆排序 | 交换和向下调整堆"
+                                                                        title="堆排序 | 交换和向下调整堆"/></p></div>
+            <div><p><b class="scene_desc">输出</b><br/><img src="scene_3.svg" alt="堆排序 | 输出"
+                                                            title="堆排序 | 输出"/></p></div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+

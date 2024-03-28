@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>克鲁斯卡尔算法 | 动画算法与数据结构</title>
+    <link rel="stylesheet" href="/asserts/stylesheets/print.css" type="text/css" media="all"/>
+</head>
+<body>
+<div class="wrapper">
+    <h3>克鲁斯卡尔算法 | <a href="/">动画算法与数据结构</a></h3>
+
+    <div id="content" class="content">
+        <h4>符号</h4>
+
+        <table class="items" cellspacing="0">
+            <tbody id="variable">
+            <tr>
+                <th class="scene_desc" colspan="3">数据</th>
+            </tr>
+            <tr>
+                <td class="symbol"><img src="variable_weight.svg"/></td>
+                <td>节点之间的距离</td>
+                <td class="code">weight</td>
+            </tr>
+            </tbody>
+        </table>
+        <br/>
+        <table class="items" cellspacing="0">
+            <tbody id="formula">
+            <tr>
+                <th class="scene_desc" colspan="3">排序</th>
+            </tr>
+            <tr>
+                <td class="symbol"><img src="formula_sort.svg"/></td>
+                <td>按权重升序对边排序</td>
+                <td class="code"></td>
+            </tr>
+            <tr>
+                <th class="scene_desc" colspan="3">边的添加</th>
+            </tr>
+            <tr>
+                <td class="symbol"><img src="formula_connect.svg"/></td>
+                <td>向最小生成树添加边</td>
+                <td class="code">向 MST 添加 e</td>
+            </tr>
+            <tr>
+                <td class="symbol"><img src="formula_check_pair.svg"/></td>
+                <td>表示要连接的边</td>
+                <td class="code">u, v</td>
+            </tr>
+            <tr>
+                <td class="symbol"><img src="formula_edges.svg"/></td>
+                <td>表示包含在最小生成树中的边</td>
+                <td class="code">包含在 MST 中的边</td>
+            </tr>
+            <tr>
+                <td class="symbol"><img src="formula_mst.svg"/></td>
+                <td>扩展包含在最小生成树中的节点的范围</td>
+                <td class="code">包含在 MST 中的节点</td>
+            </tr>
+            </tbody>
+        </table>
+
+        <br/>
+        <h4>动画</h4>
+        <div id="scene" class="scene">
+            <div><p><b class="scene_desc">排序</b><br/><img src="scene_0.svg" alt="克鲁斯卡尔算法 | 整列"
+                                                            title="克鲁斯卡尔算法 | 整列"/></p></div>
+            <div><p><b class="scene_desc">边的添加</b><br/><img src="scene_1.svg" alt="克鲁斯卡尔算法 | 边的添加"
+                                                                title="克鲁斯卡尔算法 | 边的添加"/></p></div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+

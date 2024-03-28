@@ -1,0 +1,375 @@
+body {
+    padding-top: 12px;
+    margin-top: 12px;
+
+    padding-left: 12px;
+    margin-left: 12px;
+    padding-right: 28px;
+    margin-right: 28px;
+
+}
+
+.body {
+    border-collapse: collapse;
+    background-color: #ffffff;
+    font-family: "SimSun", "宋体", serif;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+td {
+    font-family: Helvetica Neue, Helvetica, Arial, "苹方-简", "Microsoft YaHei", "微软雅黑", sans-serif;
+}
+
+.star {
+    color: #ff0000;
+}
+
+.star_half {
+    color: #ff8800;
+}
+
+.icon_qr {
+    width: 102px;
+    background-color: #ffffff;
+}
+
+.icon_small {
+    margin-top: 0.2em;
+    margin-bottom: 0.2em;
+    vertical-align: middle;
+    width: 40px;
+
+}
+
+.icon_algorithm {
+    width: 136px;
+    margin-left: -28px;
+    margin-top: -42px;
+    z-index: 100;
+}
+
+.icon_anim {
+    background-image: url("../icons/common/icon_anim.svg");
+    display: inline-block;
+    position: relative;
+    top: -0.0625em;
+    vertical-align: middle;
+    height: 1.5em;
+    width: 1.5em;
+    margin: 0.5em;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.icon_frame {
+    background-image: url("../icons/common/icon_frame.svg");
+    display: inline-block;
+    position: relative;
+    top: -0.0625em;
+    vertical-align: middle;
+    height: 2.5em;
+    width: 2.5em;
+    margin: 0.5em;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.icon_code {
+    background-image: url("../icons/common/icon_code.svg");
+    display: inline-block;
+    position: relative;
+    top: -0.0625em;
+    vertical-align: middle;
+    height: 2.5em;
+    width: 2.5em;
+    margin: 0.5em;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.icon_info {
+    background-image: url("../icons/common/icon_info.svg");
+    display: inline-block;
+    position: relative;
+    top: -0.0625em;
+    vertical-align: middle;
+    height: 2.5em;
+    width: 2.5em;
+    margin: 0.5em;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.icon_right {
+    background-image: url("../icons/common/icon_right.svg");
+    display: inline-block;
+    position: relative;
+    top: -0.0625em;
+    vertical-align: middle;
+    height: 1.5em;
+    width: 1.5em;
+    margin: 0.4em;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.icon_left {
+    background-image: url("../icons/common/icon_left.svg");
+    display: inline-block;
+    position: relative;
+    top: -0.0625em;
+    vertical-align: middle;
+    height: 1.5em;
+    width: 1.5em;
+    margin: 0.4em;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.icon_caution {
+    background-image: url("../icons/common/icon_caution.svg");
+    display: inline-block;
+    position: relative;
+    top: -0.0625em;
+    vertical-align: middle;
+    height: 1.25em;
+    width: 1.25em;
+    margin: 0.5em;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.pseudo_code {
+    padding: 8px;
+    border: 1px solid #e0e0e0;
+    margin-bottom: 20px;
+}
+
+.pseudo_code p {
+    font-size: 12pt;
+}
+
+.pseudo_code pre {
+    font-size: 12pt;
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+.qr_code a {
+    color: #e00000;
+    text-decoration: none;
+}
+
+.problem {
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-bottom: 4px;
+    height: 200px;
+    width: 450px;
+    background-color: #ffffff;
+}
+
+.link {
+    width: 207px;
+    height: 200px;
+    padding-left: 16px;
+    background-color: #eeeeee;
+}
+
+.material td {
+    width: 240px;
+    padding-left: 8px;
+}
+
+.description {
+    width: 760px;
+    margin: auto;
+}
+
+.pabstract {
+    color: #4295e7;
+    font-family: Helvetica Neue, Helvetica, Arial, "苹方-简", "Microsoft YaHei", "微软雅黑", sans-serif;
+    font-size: 10pt;
+    font-weight: bold;
+    padding-left: 82px;
+    padding-right: 0px;
+    height: 42px;
+    line-height: 16px;
+}
+
+.anim_caption {
+    width: 100px;
+    color: #e00000;
+    font-family: Helvetica Neue, Helvetica, Arial, "苹方-简", "Microsoft YaHei", "微软雅黑", sans-serif;
+    font-weight: bold;
+    font-size: 9pt;
+    text-align: center;
+    letter-spacing: 6px;
+    padding: 4px 0;
+    background-color: #ffffff;
+    border: 2px solid #e00000;
+    border-radius: 8px;
+    margin-bottom: 16px;
+}
+
+.anim_caption:hover {
+    background-color: #fff8f8;
+}
+
+.part_title {
+    margin: 0 auto;
+    padding-top: 40px;
+    width: 760px;
+    font-family: Helvetica Neue, Helvetica, Arial, "苹方-简", "Microsoft YaHei", "微软雅黑", sans-serif;
+    font-size: 20pt;
+}
+
+.chapter_title {
+    color: #8888aa;
+    margin: 0 auto;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    width: 760px;
+    font-family: Helvetica Neue, Helvetica, Arial, "苹方-简", "Microsoft YaHei", "微软雅黑", sans-serif;
+    font-size: 16pt;
+}
+
+.update {
+    margin: 0 auto;
+    padding-top: 0;
+    padding-bottom: 0;
+    width: 760px;
+    font-family: "SimSun", "宋体", serif;
+    font-size: 8pt;
+    color: #a0a0a0;
+    font-weight: normal;
+    text-align: right;
+}
+
+.footnote {
+    margin: 0 auto;
+    padding-top: 0;
+    padding-bottom: 0;
+    width: 760px;
+    font-family: "SimSun", "宋体", serif;
+    font-size: 9pt;
+    color: #f08080;
+    font-weight: normal;
+    text-align: right;
+}
+
+div.section {
+    margin: 0 auto;
+    width: 760px;
+}
+
+.symbol {
+    border-collapse: collapse;
+}
+
+.symbol td {
+    border: 1px solid #aaaaaa;
+    padding: 8px;
+    margin: 0px;
+}
+
+.summary {
+    border-collapse: collapse;
+}
+
+.summary td {
+    border: 1px solid #aaaaaa;
+    padding: 8px;
+    margin: 0px;
+    font-size: 10pt;
+    text-align: center;
+}
+
+.summary th {
+    border: 1px solid #aaaaaa;
+    background-color: #e8f0f8;
+    padding: 6px;
+    margin: 0px;
+    font-size: 10pt;
+    text-align: center;
+}
+
+
+div.card {
+    background-color: #ffffff;
+    border: 8px solid #8888aa;
+    width: 746px;
+    height: 264px;
+    padding: 0;
+    margin: 6px auto 40px;
+}
+
+.card_header {
+    border-collapse: collapse;
+    width: 668px;
+    height: 64px;
+    margin-left: 80px;
+    margin-top: -96px;
+    padding: 0 0 8px;
+}
+
+.card_header td {
+    vertical-align: middle;
+}
+
+td.title {
+    padding-left: 28px;
+    background-color: #8888aa;
+    border: 2px solid #8888aa;
+    vertical-align: middle;
+    width: 242px;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 14pt;
+    font-family: "SimSun", "宋体", serif;
+}
+
+.en_title {
+    font-size: 8pt;
+    font-family: "Hiragino Kaku Gothic ProN", sans-serif;
+}
+
+
+td.icon_box {
+    width: 120px;
+    background-color: #ffffff;
+    border: 2px solid #8888aa;
+    vertical-align: middle;
+    padding: 0 0 0 4px;
+    margin: 0;
+}
+
+td.io {
+    background-color: #ffffff;
+    border: 1px solid #c0c0c0;
+    vertical-align: middle;
+    text-align: center;
+}
+
+td.arrow {
+    text-align: center;
+}
+
+.ioframe {
+    width: 216px;
+}
+
+td.level {
+    text-align: center;
+    width: 68px;
+    height: 44px;
+    background-color: #ffffff;
+    border: 2px solid #8888aa;
+    line-height: 38px;
+}

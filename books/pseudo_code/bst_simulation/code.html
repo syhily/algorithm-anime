@@ -1,0 +1,57 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>动画算法与数据结构</title>
+    <link rel="stylesheet" href="/asserts/stylesheets/main.css" type="text/css" media="all"/>
+</head>
+
+<div class="pseudo_code">
+
+<pre>
+# 动态二叉树的节点
+class Node:
+    Node *parent
+    Node *left
+    Node *right
+    key
+
+# 动态二叉树
+class BinaryTree: 
+    Node *root
+
+    insert(data):
+        Node *x &larr; root   # 从根节点开始搜索
+        Node *y &larr; NULL   # x 的父节点
+
+        # 确定新节点的父节点
+        while x &ne; NULL:
+            y &larr; x # 设置父节点
+            if data &lt; x.key:
+                x &larr; x.left    # 移动到左子节点
+            else:
+                x &larr; x.right   # 移动到右子节点
+
+        # 生成节点，设置指针
+        Node *z &larr; 生成节点
+        z.key &larr; data
+        z.left &larr; NULL
+        z.right &larr; NULL
+        z.parent &larr; y
+
+        if y = NULL: # 树为空的情况
+            root &larr; z
+        else if z.key &lt; y.key:
+            y.left &larr; z # 设 z 为 y 的左子节点
+        else:
+            y.right &larr; z # 设 z 为 y 的右子节点
+
+    inorder(Node *u):
+        if u = NULL: return
+        inorder(u.left)
+        输出 u.key
+        inorder(u.right)
+</pre>
+</div>
+
+</body>
+</html>

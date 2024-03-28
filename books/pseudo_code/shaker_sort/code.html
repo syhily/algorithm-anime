@@ -1,0 +1,30 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<pre>
+shakerSort(A, N):
+    left &larr; 0
+    right &larr; N-1
+    while True:
+        // 从前方开始的交换处理
+        last &larr; left
+
+        for j &larr; left+1 to right:
+            if A[j-1] > A[j]:
+	        swap(A[j-1], A[j])
+                last &larr; j - 1    // 更新最后进行交换的位置
+
+        right &larr; last; // 缩小后方未排序的区域
+            
+        if left = right: break
+
+        // 从后方开始的交换处理
+        last &larr; right
+
+        for j &larr; right downto left+1:
+            if A[j-1] > A[j]:
+                swap(A[j-1], A[j])
+                last &larr; j        // 更新最后进行交换的位置
+
+        left &larr; last; // 缩小前方未排序的区域
+
+        if left = right: break
+</pre>

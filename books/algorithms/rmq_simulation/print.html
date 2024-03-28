@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>线段树: RMQ | 动画算法与数据结构</title>
+    <link rel="stylesheet" href="/asserts/stylesheets/print.css" type="text/css" media="all"/>
+</head>
+<body>
+<div class="wrapper">
+    <h3>线段树: RMQ | <a href="/">动画算法与数据结构</a></h3>
+
+    <div id="content" class="content">
+        <h4>符号</h4>
+
+        <table class="items" cellspacing="0">
+            <tbody id="variable">
+            <tr>
+                <th class="scene_desc" colspan="3">数据</th>
+            </tr>
+            <tr>
+                <td class="symbol"><img src="variable_minv.svg"/></td>
+                <td>区间的最小值</td>
+                <td class="code">minv</td>
+            </tr>
+            <tr>
+                <td class="symbol"><img src="variable_res.svg"/></td>
+                <td>作为指定区间最小值的返回值（* 由于用于显示，不必使用数组）</td>
+                <td class="code">res</td>
+            </tr>
+            </tbody>
+        </table>
+        <br/>
+        <table class="items" cellspacing="0">
+            <tbody id="formula">
+            <tr>
+                <th class="scene_desc" colspan="3">对请求的处理</th>
+            </tr>
+            <tr>
+                <td class="symbol"><img src="formula_update.svg"/></td>
+                <td>更新区间的最小值</td>
+                <td class="code">minv[k] &larr; ?</td>
+            </tr>
+            <tr>
+                <td class="symbol"><img src="formula_query.svg"/></td>
+                <td>确定指定区间的最小值</td>
+                <td class="code">res &larr; ?</td>
+            </tr>
+            <tr>
+                <td class="symbol"><img src="formula_updated.svg"/></td>
+                <td>因更新查询而更新的区间</td>
+                <td class="code">k 的轨迹</td>
+            </tr>
+            <tr>
+                <td class="symbol"><img src="formula_outside.svg"/></td>
+                <td>搜索区间与查询区间不相交</td>
+                <td class="code">if r &le; a or b &le; l:</td>
+            </tr>
+            <tr>
+                <td class="symbol"><img src="formula_contain.svg"/></td>
+                <td>搜索区间完全处于查询区间内</td>
+                <td class="code">else if a &le; l and r &le; b:</td>
+            </tr>
+            <tr>
+                <td class="symbol"><img src="formula_visited.svg"/></td>
+                <td>搜索区间包含查询区间内和查询区间外的部分</td>
+                <td class="code">else:</td>
+            </tr>
+            </tbody>
+        </table>
+
+        <br/>
+        <h4>动画</h4>
+        <div id="scene" class="scene">
+            <div><p><b class="scene_desc">对请求的处理</b><br/><img src="scene_0.svg" alt="线段树: RMQ | 对请求的处理"
+                                                                    title="线段树: RMQ | 对请求的处理"/></p></div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+

@@ -1,0 +1,97 @@
+.flash_g {
+    animation-name: Flash1;
+    animation-duration: 0.5s;
+    animation-delay: 0s;
+    animation-iteration-count: 2;
+}
+
+@keyframes Flash1 {
+    50% {
+        opacity: 0;
+    }
+}
+
+.for_print {
+    display: none;
+}
+
+body {
+    background-color: #ffffff;
+    font-family: "SimSun", "宋体", serif;
+}
+
+.wrapper {
+    width: 100%;
+    margin: 0 auto;
+    padding: 16px;
+    padding-top: 8px;
+}
+
+.header {
+    width: 100%;
+    background-color: #f0f0f0;
+    height: 48px;
+    padding: 8px;
+}
+
+.content {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.scene {
+    background-color: #ffffff;
+    width: 100%;
+    margin: 0 auto;
+
+}
+
+.icon_home {
+    background-image: url("/asserts/icons/controller/icon_home.svg");
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    horizontal-aligh: right;
+    height: 3em;
+    width: 3em;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+
+table.items {
+    border: 0px solid #d0d0d0;
+    width: 98%;
+}
+
+table.items td {
+    background: #ffffff;
+    border-bottom: 1px solid #d0d0d0;
+    padding: 4px;
+    font-size: 11pt;
+}
+
+table.items th {
+    background: #ffffff;
+    border-bottom: 1px solid #d0d0d0;
+    padding: 4px;
+    padding-top: 16px;
+    font-size: 10pt;
+}
+
+td.symbol {
+    text-align: center;
+    width: 40px;
+}
+
+td.code {
+    text-align: left;
+    width: 280px;
+    font-family: Courier New;
+}
+
+.scene_desc {
+    border: 0 solid #ffffff;
+    text-align: left;
+    font-size: 10pt;
+}

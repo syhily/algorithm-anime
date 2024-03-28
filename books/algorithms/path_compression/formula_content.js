@@ -1,0 +1,2 @@
+var variable_content = '<tr><th class="scene_desc" colspan="3">数据</th></tr>';
+var formula_content = '<tr><th class="scene_desc" colspan="3">路径压缩</th></tr><tr><td class="symbol"><img src="formula_parse.svg" /></td><td>探索到根节点的路径</td><td class="code">compress(x)</td></tr><tr><td class="symbol"><img src="formula_update.svg" /></td><td>更新父节点</td><td class="code">parent[x] &larr; compress(parent[x])</td></tr><tr><td class="symbol"><img src="formula_path.svg" /></td><td>压缩的路径</td><td class="code">x的轨迹</td></tr>';

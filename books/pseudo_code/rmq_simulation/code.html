@@ -1,0 +1,64 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>动画算法与数据结构</title>
+    <link rel="stylesheet" href="/asserts/stylesheets/main.css" type="text/css" media="all"/>
+</head>
+
+<div class="pseudo_code">
+
+
+
+<pre>
+# Segment Tree for RQM
+class RMQ:
+    N    # 满二叉树的节点数
+    n    # 数列的元素数量 = 叶子节点的数量
+    minv # 记录最小值的数列
+
+    # 对所需的最低限度数量的数列元素进行初始化
+    init(len): 
+        n &larr; 1
+        while n < len:
+            n &larr; n*2  # 叶子节点的数量 n 乘以 2 的幂
+        N &larr; 2*n - 1  # 调整满二叉树的节点数量 
+        for i &larr; 0 to N-1:
+            minv[i] &larr; INF
+
+    # 求区间[a, b)的最小值		 
+    findMin(a, b):
+        return query(a, b, 0, 0, n)
+
+    query(a, b, k, l, r):
+        if r &le; a or b &le; l:
+            res &larr; INF
+        else if a &le; l and r &le; b:
+            res &larr; minv[k]
+        else:
+            vl &larr; query(a, b, left(k), l, (l+r)/2)
+            vr &larr; query(a, b, right(k), (l+r)/2, r)
+            res &larr; min(vl, vr)
+
+        return res
+
+    # 将第 k 个元素的值替换为 x
+    update(k, x):
+        k &larr; k + n - 1
+        minv[k] &larr; x
+
+        while  k &gt; 0:
+            k &larr; parent(k)
+            minv[k] &larr; min(minv[left(k)], minv[right(k)])
+
+    left(k):
+        return 2*k + 1
+
+    right(k):
+        return 2*k + 2
+
+    parent(k):
+        return (k - 1)/2
+</pre>
+</div>
+</body>
+</html>

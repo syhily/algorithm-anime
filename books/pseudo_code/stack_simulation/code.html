@@ -1,0 +1,47 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>动画算法与数据结构</title>
+    <link rel="stylesheet" href="/asserts/stylesheets/main.css" type="text/css" media="all"/>
+</head>
+
+<div class="pseudo_code">
+<pre>
+# 实现了栈操作的类
+
+class Stack:
+    S       # 管理元素的数组
+    top     # 指向栈顶点的箭头
+
+    init():
+        top &larr; -1     # 初始化栈
+
+    push(x):
+        S[++top] &larr; x # 使 top 加 1 后，将 top 指向的位置赋值为 x
+
+    pop():
+        return S[top--]   # 返回 S[top] 后使 top 减 1
+
+    peak()
+        return S[top]
+
+    empty():
+        return top = -1   # top 为 -1 时栈是空的
+
+    size():
+        return top + 1
+
+
+# 栈操作模拟
+
+Stack st(5) # 生成一个可以管理5个元素的栈
+st.push(8)
+st.push(6)
+st.push(7)
+st.pop()
+st.push(5)
+st.pop()
+</pre>
+</div>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>动画算法与数据结构</title>
+    <link rel="stylesheet" href="/asserts/stylesheets/main.css" type="text/css" media="all"/>
+</head>
+
+<div class="pseudo_code">
+
+<pre>
+# 二维点群 PointGroup pg
+giftWrapping(pg):
+    head &larr; pg.points的最左边的点编号
+    f &larr; head # 记录最终点
+    
+    while True:
+        t &larr; pg.points中以点 head 为起点，按逆时针方向最后到达的点编号
+        将点 t 添加到凸包
+        head &larr; t;
+        if head = f:
+            break # 回到起点后结束
+</pre>
+</div>
+
+</body>
+</html>

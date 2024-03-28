@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Floyd-Warshall 算法 | 动画算法与数据结构</title>
+    <link rel="stylesheet" href="/asserts/stylesheets/print.css" type="text/css" media="all"/>
+</head>
+<body>
+<div class="wrapper">
+    <h3>Floyd-Warshall 算法 | <a href="/">动画算法与数据结构</a></h3>
+
+    <div id="content" class="content">
+        <h4>符号</h4>
+
+        <table class="items" cellspacing="0">
+            <tbody id="variable">
+            <tr>
+                <th class="scene_desc" colspan="3">数据</th>
+            </tr>
+            <tr>
+                <td class="symbol"><img src="variable_dist.svg"/></td>
+                <td>节点之间的距离</td>
+                <td class="code">dist</td>
+            </tr>
+            </tbody>
+        </table>
+        <br/>
+        <table class="items" cellspacing="0">
+            <tbody id="formula">
+            <tr>
+                <th class="scene_desc" colspan="3">邻接矩阵的初始化</th>
+            </tr>
+            <tr>
+                <td class="symbol"><img src="formula_input.svg"/></td>
+                <td>创建矩阵</td>
+                <td class="code"></td>
+            </tr>
+            <tr>
+                <th class="scene_desc" colspan="3">矩阵的更新</th>
+            </tr>
+            <tr>
+                <td class="symbol"><img src="formula_ij.svg"/></td>
+                <td>更新距离</td>
+                <td class="code">dist[i][j] &larr; dist[i][k] + dist[k][j]</td>
+            </tr>
+            <tr>
+                <td class="symbol"><img src="formula_inter.svg"/></td>
+                <td>表示途经点</td>
+                <td class="code">k</td>
+            </tr>
+            <tr>
+                <th class="scene_desc" colspan="3">输出</th>
+            </tr>
+            <tr>
+                <td class="symbol"><img src="formula_output.svg"/></td>
+                <td>输出矩阵</td>
+                <td class="code"></td>
+            </tr>
+            </tbody>
+        </table>
+
+        <br/>
+        <h4>动画</h4>
+        <div id="scene" class="scene">
+            <div><p><b class="scene_desc">邻接矩阵的初始化</b><br/><img src="scene_0.svg"
+                                                                        alt="Floyd-Warshall 算法 | 邻接矩阵的初始化"
+                                                                        title="Floyd-Warshall 算法 | 邻接矩阵的初始化"/>
+            </p></div>
+            <div><p><b class="scene_desc">矩阵的更新</b><br/><img src="scene_1.svg"
+                                                                  alt="Floyd-Warshall 算法 | 矩阵的更新"
+                                                                  title="Floyd-Warshall 算法 | 矩阵的更新"/></p></div>
+            <div><p><b class="scene_desc">输出</b><br/><img src="scene_2.svg" alt="Floyd-Warshall 算法 | 输出"
+                                                            title="Floyd-Warshall 算法 | 输出"/></p></div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+

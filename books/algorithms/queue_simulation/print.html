@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>队列 | 动画算法与数据结构</title>
+    <link rel="stylesheet" href="/asserts/stylesheets/print.css" type="text/css" media="all"/>
+</head>
+<body>
+<div class="wrapper">
+    <h3>队列 | <a href="/">动画算法与数据结构</a></h3>
+
+    <div id="content" class="content">
+        <h4>符号</h4>
+
+        <table class="items" cellspacing="0">
+            <tbody id="variable">
+            <tr>
+                <th class="scene_desc" colspan="3">数据</th>
+            </tr>
+            <tr>
+                <td class="symbol"><img src="variable_Q.svg"/></td>
+                <td>队列的元素</td>
+                <td class="code">Q</td>
+            </tr>
+            </tbody>
+        </table>
+        <br/>
+        <table class="items" cellspacing="0">
+            <tbody id="formula">
+            <tr>
+                <th class="scene_desc" colspan="3">数据的插入和取出</th>
+            </tr>
+            <tr>
+                <td class="symbol"><img src="formula_tail.svg"/></td>
+                <td>向队列的末尾添加数据</td>
+                <td class="code">Q[tail++] &larr; x</td>
+            </tr>
+            <tr>
+                <td class="symbol"><img src="formula_head.svg"/></td>
+                <td>从队列的开头取出数据</td>
+                <td class="code">return Q[head++]</td>
+            </tr>
+            <tr>
+                <td class="symbol"><img src="formula_p_head.svg"/></td>
+                <td>指向队列的开头</td>
+                <td class="code">head</td>
+            </tr>
+            <tr>
+                <td class="symbol"><img src="formula_p_tail.svg"/></td>
+                <td>指向队列的末尾</td>
+                <td class="code">tail</td>
+            </tr>
+            </tbody>
+        </table>
+
+        <br/>
+        <h4>动画</h4>
+        <div id="scene" class="scene">
+            <div><p><b class="scene_desc">数据的插入和取出</b><br/><img src="scene_0.svg" alt="队列 | 数据的插入和取出"
+                                                                        title="队列 | 数据的插入和取出"/></p></div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+

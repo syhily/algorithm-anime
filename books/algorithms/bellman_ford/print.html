@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>贝尔曼-福特算法 | 动画算法与数据结构</title>
+    <link rel="stylesheet" href="/asserts/stylesheets/print.css" type="text/css" media="all"/>
+</head>
+<body>
+<div class="wrapper">
+    <h3>贝尔曼-福特算法 | <a href="/">动画算法与数据结构</a></h3>
+
+    <div id="content" class="content">
+        <h4>符号</h4>
+
+        <table class="items" cellspacing="0">
+            <tbody id="variable">
+            <tr>
+                <th class="scene_desc" colspan="3">数据</th>
+            </tr>
+            <tr>
+                <td class="symbol"><img src="variable_dist.svg"/></td>
+                <td>从起点到各节点的最短距离</td>
+                <td class="code">dist</td>
+            </tr>
+            <tr>
+                <td class="symbol"><img src="variable_weight.svg"/></td>
+                <td>节点之间的距离</td>
+                <td class="code">weight</td>
+            </tr>
+            </tbody>
+        </table>
+        <br/>
+        <table class="items" cellspacing="0">
+            <tbody id="formula">
+            <tr>
+                <th class="scene_desc" colspan="3">起点的初始化</th>
+            </tr>
+            <tr>
+                <td class="symbol"><img src="formula_source.svg"/></td>
+                <td>将起点的暂定距离初始化为 0</td>
+                <td class="code">dist[s] &larr; 0</td>
+            </tr>
+            <tr>
+                <td class="symbol"><img src="formula_others.svg"/></td>
+                <td>将其他节点的暂定距离初始化为大值</td>
+                <td class="code">dist[v] &larr; INF</td>
+            </tr>
+            <tr>
+                <th class="scene_desc" colspan="3">距离的更新</th>
+            </tr>
+            <tr>
+                <td class="symbol"><img src="formula_v.svg"/></td>
+                <td>更新暂定距离</td>
+                <td class="code">if dist[e.v] &gt; dist[u] + e.weight: <br>&nbsp;&nbsp;&nbsp;&nbsp;dist[e.v] &larr;
+                    dist[u] + e.weight
+                </td>
+            </tr>
+            <tr>
+                <th class="scene_desc" colspan="3">最短距离的输出</th>
+            </tr>
+            <tr>
+                <td class="symbol"><img src="formula_all.svg"/></td>
+                <td>输出从起点开始的最短距离</td>
+                <td class="code"></td>
+            </tr>
+            </tbody>
+        </table>
+
+        <br/>
+        <h4>动画</h4>
+        <div id="scene" class="scene">
+            <div><p><b class="scene_desc">起点的初始化</b><br/><img src="scene_0.svg"
+                                                                    alt="贝尔曼-福特算法 | 起点的初始化"
+                                                                    title="贝尔曼-福特算法 | 起点的初始化"/></p></div>
+            <div><p><b class="scene_desc">距离的更新</b><br/><img src="scene_1.svg" alt="贝尔曼-福特算法 | 距离的更新"
+                                                                  title="贝尔曼-福特算法 | 距离的更新"/></p></div>
+            <div><p><b class="scene_desc">最短距离的输出</b><br/><img src="scene_2.svg"
+                                                                      alt="贝尔曼-福特算法 | 最短距离的输出"
+                                                                      title="贝尔曼-福特算法 | 最短距离的输出"/></p>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+

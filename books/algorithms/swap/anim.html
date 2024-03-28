@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>交换 | 动画算法与数据结构</title>
+    <script src="/asserts/scripts/jquery.min.js"></script>
+    <link rel="stylesheet" href="/asserts/stylesheets/anim.css" type="text/css" media="all"/>
+    <script language="JavaScript" type="text/javascript" src="formula_content.js"></script>
+    <script language="JavaScript" type="text/javascript" src="/asserts/scripts/message.js"></script>
+    <script language="JavaScript" type="text/javascript" src="anim_content.js"></script>
+    <script language="JavaScript" type="text/javascript" src="/asserts/scripts/anim.js"></script>
+
+</head>
+<body>
+<!-- 2.0 ---->
+<!--
+<div class="popup">
+  <div class="pcontent">
+    <table style="width:100%">
+  <tr>
+    <td style="text-align:left;color:#bbb;font-size:14pt;font-weight:bold">
+      フレームを生成します（β版）
+    </td>
+    <td style="text-align:right">
+      <button id="cancelButton">Cancel</button>
+    </td>
+  </tr>
+    </table>
+    <p id="messageDescription"></p>
+    <p id="messageServer"></p>
+    <table id="selectorTable" cellspacing="16" style="text-align:center">
+  <tr>
+    <td style="text-align:left"><div id="sampleSelector"></div></td>
+  </tr>
+  <tr>
+    <td>
+      <textarea id="userInputArea"></textarea>
+    </td>
+  </tr>
+  <tr>
+    <td style="text-align:center">
+      <button id="createButton">Create</button>
+    </td>
+  </tr>
+    </table>
+  </div>
+</div>
+-->
+<!-- 2.0 ---->
+
+<div class="wrapper">
+    <div id="header" class="header">
+        <table style="width:100%; vertical-align:middle">
+            <tr>
+                <!-- 2.0 -->
+                <td style="text-align:left">
+                    <a href="/"><b class="icon_home" style="margin-right:8px"></b></a>
+                </td>
+                <td style="width:100%; text-align:left">
+                    <!--<a href="https://yutaka-watanobe.github.io/star-aida/1.1/quick_manual/ja/"><b class="icon_help" style="margin-right:8px"></b></a>-->
+                </td>
+
+                <!-- -->
+                <td class="mbutton"><b class="icon_space_mode" id="space_view"></b></td>
+                <td class="mbutton"><b class="icon_var_formula_mode" id="var_formula_view"></b></td>
+            </tr>
+        </table>
+    </div>
+
+    <div id="anim_container" class="anim_container">
+        <div id="content" class="content"></div>
+        <div class="progress_bar">
+            <table>
+                <tr id="progress"></tr>
+            </table>
+        </div>
+        <div id="controller" class="controller">
+            <table>
+                <tr>
+                    <td class="cbutton_left"></td>
+
+                    <td class="cbutton"><b class="icon_left_arrow" id="prev"></b></td>
+                    <td class="cbutton"><b class="icon_play" id="play"></b></td>
+                    <td class="cbutton"><b class="icon_right_arrow" id="next"></b></td>
+                    <td class="cbutton_right"><b class="icon_tile_mode_white" id="tile_view"></b></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <div id="tile_container" class="tile_container">
+        <div id="tileview" class="tileview"></div>
+        <div id="tile_selector" class="tile_selector">
+            <table>
+                <tr>
+                    <td class="cbutton"></td>
+                    <td class="cbutton"><b class="icon_tile_1" id="tile_1"></b></td>
+                    <td class="cbutton"><b class="icon_tile_2" id="tile_2"></b></td>
+                    <td class="cbutton"><b class="icon_tile_3" id="tile_3"></b></td>
+                    <td class="cbutton_right"><b class="icon_anim_mode_white" id="anim_view"></b></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <div id="var_formula_container" class="var_formula_container">
+        <table class="items" cellspacing="0">
+            <tbody id="variable"/>
+        </table>
+
+        <table class="items" cellspacing="0">
+            <tbody id="formula"/>
+        </table>
+    </div>
+</div>
+</body>
+</html>
+

@@ -1,0 +1,27 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>动画算法与数据结构</title>
+    <link rel="stylesheet" href="/asserts/stylesheets/main.css" type="text/css" media="all"/>
+</head>
+
+<div class="pseudo_code">
+
+<pre>
+BinaryTree t &larr; 生成二叉树
+time &larr; 1
+
+# 访问二叉树 t 的节点 u 的函数
+inorder(u):
+    if u = NIL:
+        return
+    inorder(t.nodes[u].left)
+    L[u] &larr; time++
+    inorder(t.nodes[u].right)
+
+# 从二叉树的根节点开始访问
+inorder(t.root)
+</pre>
+</div>
+</body>
+</html>

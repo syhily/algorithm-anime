@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>广度优先搜索 | 动画算法与数据结构</title>
+    <link rel="stylesheet" href="/asserts/stylesheets/print.css" type="text/css" media="all"/>
+</head>
+<body>
+<div class="wrapper">
+    <h3>广度优先搜索 | <a href="/">动画算法与数据结构</a></h3>
+
+    <div id="content" class="content">
+        <h4>符号</h4>
+
+        <table class="items" cellspacing="0">
+            <tbody id="variable">
+            <tr>
+                <th class="scene_desc" colspan="3">数据</th>
+            </tr>
+            <tr>
+                <td class="symbol"><img src="variable_color.svg"/></td>
+                <td>节点的访问状态</td>
+                <td class="code">color</td>
+            </tr>
+            </tbody>
+        </table>
+        <br/>
+        <table class="items" cellspacing="0">
+            <tbody id="formula">
+            <tr>
+                <th class="scene_desc" colspan="3">起点的确定</th>
+            </tr>
+            <tr>
+                <td class="symbol"><img src="formula_tail.svg"/></td>
+                <td>将起点插入队列</td>
+                <td class="code">que.enqueue(s)</td>
+            </tr>
+            <tr>
+                <th class="scene_desc" colspan="3">搜索</th>
+            </tr>
+            <tr>
+                <td class="symbol"><img src="formula_vi.svg"/></td>
+                <td>访问相邻的节点</td>
+                <td class="code">color[v] &larr; GRAY</td>
+            </tr>
+            <tr>
+                <td class="symbol"><img src="formula_tail.svg"/></td>
+                <td>将已访问的节点放入队列</td>
+                <td class="code">que.enqueue(v)</td>
+            </tr>
+            <tr>
+                <td class="symbol"><img src="formula_ui.svg"/></td>
+                <td>完成从队列取出的节点的访问</td>
+                <td class="code">color[u] &larr; BLACK</td>
+            </tr>
+            <tr>
+                <td class="symbol"><img src="formula_visited.svg"/></td>
+                <td>扩展已访问节点的组的范围</td>
+                <td class="code">color 为 GRAY 的节点</td>
+            </tr>
+            <tr>
+                <td class="symbol"><img src="formula_finished.svg"/></td>
+                <td>扩展已完成的节点的组的范围</td>
+                <td class="code">color 为 BLACK 的节点</td>
+            </tr>
+            </tbody>
+        </table>
+
+        <br/>
+        <h4>动画</h4>
+        <div id="scene" class="scene">
+            <div><p><b class="scene_desc">起点的确定</b><br/><img src="scene_0.svg" alt="广度优先搜索 | 起点的确定"
+                                                                  title="广度优先搜索 | 起点的确定"/></p></div>
+            <div><p><b class="scene_desc">搜索</b><br/><img src="scene_1.svg" alt="广度优先搜索 | 探索"
+                                                            title="广度优先搜索 | 探索"/></p></div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+

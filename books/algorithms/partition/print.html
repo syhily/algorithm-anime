@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>分割 | 动画算法与数据结构</title>
+    <link rel="stylesheet" href="/asserts/stylesheets/print.css" type="text/css" media="all"/>
+</head>
+<body>
+<div class="wrapper">
+    <h3>分割 | <a href="/">动画算法与数据结构</a></h3>
+
+    <div id="content" class="content">
+        <h4>符号</h4>
+
+        <table class="items" cellspacing="0">
+            <tbody id="variable">
+            <tr>
+                <th class="scene_desc" colspan="3">数据</th>
+            </tr>
+            <tr>
+                <td class="symbol"><img src="variable_A.svg"/></td>
+                <td>整数列</td>
+                <td class="code">A</td>
+            </tr>
+            </tbody>
+        </table>
+        <br/>
+        <table class="items" cellspacing="0">
+            <tbody id="formula">
+            <tr>
+                <th class="scene_desc" colspan="3">输入</th>
+            </tr>
+            <tr>
+                <td class="symbol"><img src="formula_in.svg"/></td>
+                <td>读取整数列</td>
+                <td class="code"></td>
+            </tr>
+            <tr>
+                <th class="scene_desc" colspan="3">分割</th>
+            </tr>
+            <tr>
+                <td class="symbol"><img src="formula_select.svg"/></td>
+                <td>与基准值相比较</td>
+                <td class="code">if A[j] < A[r]:</td>
+            </tr>
+            <tr>
+                <td class="symbol"><img src="formula_swap.svg"/></td>
+                <td>与大值组的开头交换</td>
+                <td class="code">swap(A[i], A[j])</td>
+            </tr>
+            <tr>
+                <td class="symbol"><img src="formula_smallGroup.svg"/></td>
+                <td>扩展小值组的区间</td>
+                <td class="code">区间[l, i]</td>
+            </tr>
+            <tr>
+                <td class="symbol"><img src="formula_largeGroup.svg"/></td>
+                <td>扩展大值组的区间</td>
+                <td class="code">区间[i+1, j]</td>
+            </tr>
+            <tr>
+                <td class="symbol"><img src="formula_pi.svg"/></td>
+                <td>指向小值组的右端</td>
+                <td class="code">i</td>
+            </tr>
+            <tr>
+                <td class="symbol"><img src="formula_pj.svg"/></td>
+                <td>指向大值组的右端</td>
+                <td class="code">j</td>
+            </tr>
+            <tr>
+                <th class="scene_desc" colspan="3">输出</th>
+            </tr>
+            <tr>
+                <td class="symbol"><img src="formula_out.svg"/></td>
+                <td>输出已分组的整数列</td>
+                <td class="code"></td>
+            </tr>
+            </tbody>
+        </table>
+
+        <br/>
+        <h4>动画</h4>
+        <div id="scene" class="scene">
+            <div><p><b class="scene_desc">输入</b><br/><img src="scene_0.svg" alt="分割 | 输入" title="分割 | 输入"/>
+            </p></div>
+            <div><p><b class="scene_desc">分割</b><br/><img src="scene_1.svg" alt="分割 | 分割" title="分割 | 分割"/>
+            </p></div>
+            <div><p><b class="scene_desc">输出</b><br/><img src="scene_2.svg" alt="分割 | 输出" title="分割 | 输出"/>
+            </p></div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+

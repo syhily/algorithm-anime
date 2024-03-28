@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>路径压缩 | 动画算法与数据结构</title>
+    <link rel="stylesheet" href="/asserts/stylesheets/print.css" type="text/css" media="all"/>
+</head>
+<body>
+<div class="wrapper">
+    <h3>路径压缩 | <a href="/">动画算法与数据结构</a></h3>
+
+    <div id="content" class="content">
+        <h4>符号</h4>
+
+        <table class="items" cellspacing="0">
+            <tbody id="variable">
+            <tr>
+                <th class="scene_desc" colspan="3">数据</th>
+            </tr>
+            </tbody>
+        </table>
+        <br/>
+        <table class="items" cellspacing="0">
+            <tbody id="formula">
+            <tr>
+                <th class="scene_desc" colspan="3">路径压缩</th>
+            </tr>
+            <tr>
+                <td class="symbol"><img src="formula_parse.svg"/></td>
+                <td>探索到根节点的路径</td>
+                <td class="code">compress(x)</td>
+            </tr>
+            <tr>
+                <td class="symbol"><img src="formula_update.svg"/></td>
+                <td>更新父节点</td>
+                <td class="code">parent[x] &larr; compress(parent[x])</td>
+            </tr>
+            <tr>
+                <td class="symbol"><img src="formula_path.svg"/></td>
+                <td>压缩的路径</td>
+                <td class="code">x的轨迹</td>
+            </tr>
+            </tbody>
+        </table>
+
+        <br/>
+        <h4>动画</h4>
+        <div id="scene" class="scene">
+            <div><p><b class="scene_desc">路径压缩</b><br/><img src="scene_0.svg" alt="路径压缩 | 路径压缩"
+                                                                title="路径压缩 | 路径压缩"/></p></div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+

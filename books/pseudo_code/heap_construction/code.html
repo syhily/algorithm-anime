@@ -1,0 +1,48 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>动画算法与数据结构</title>
+    <link rel="stylesheet" href="/asserts/stylesheets/main.css" type="text/css" media="all"/>
+</head>
+
+<div class="pseudo_code">
+
+<pre>
+# 对元素数为 N 的数组 A 构建堆
+buildHeap(A):
+    for i &larr; N/2 - 1 downto 0:
+        downHeap(A, i)
+
+# 对元素数为 N 的数组 A 表示的堆的节点 i 进行向下调整堆
+# 基于插入的实现
+downHeap(A, i): 
+    largest       # 保存值最大的节点
+    cur &larr; i;     # 当前节点
+    val &larr; A[i]   # 临时保存起点的值
+
+    while True:
+        # 找到值最大的节点
+        if left(cur) &lt; N and right(cur) &lt; N:  
+            # 如果有左右子节点
+            if A[left(cur)] &gt; A[right(cur)]:
+                largest &larr; left(cur)
+            else:
+                largest &larr; right(cur)
+        else if left(cur) &lt; N:                  
+            largest &larr; left(cur)   # 如果只有左子节点
+        else if right(cur) &lt; N:
+            largest &larr; right(cur)  # 如果只有右子节点
+        else:
+            largest &larr; NIL
+
+        if largest = NIL: break         # 如果 cur 为叶子节点，结束处理
+        if A[largest] &le; val: break     # 如果小于起点的值，结束处理
+      
+        A[cur] &larr; A[largest]
+        cur &larr; largest      # 下降到原来的大值的位置
+
+    A[cur] &larr; val # 将起点的值放入插入位置
+</pre>
+</div>
+</body>
+</html>

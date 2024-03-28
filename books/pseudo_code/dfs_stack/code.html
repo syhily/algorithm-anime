@@ -1,0 +1,34 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>动画算法与数据结构</title>
+    <link rel="stylesheet" href="/asserts/stylesheets/main.css" type="text/css" media="all"/>
+</head>
+
+<div class="pseudo_code">
+
+
+<pre># 对图 g 以节点 s 为起点进行深度优先搜索
+depthFristSearch(g, s):
+    Stack st
+    st.push(s)
+
+    for i &larr; 0 to g.N - 1:
+        color[i] &larr; WHITE
+
+    color[s] &larr; GRAY
+    
+    while not st.empty():
+        u &larr; st.peak() # 查看栈顶
+        v = g.next(u)      # 依次取出与节点 u 相邻的节点 v
+        if v &ne; NIL:    # 有相邻的节点
+            if color[v] = WHITE:
+                color[v] &larr; GRAY
+                st.push(v)
+        else:              # 已访问所有相邻的节点
+            color[u] &larr; BLACK
+            st.pop()
+</pre>
+</div>
+</body>
+</html>

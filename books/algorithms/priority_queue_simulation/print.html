@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>优先队列 | 动画算法与数据结构</title>
+    <link rel="stylesheet" href="/asserts/stylesheets/print.css" type="text/css" media="all"/>
+</head>
+<body>
+<div class="wrapper">
+    <h3>优先队列 | <a href="/">动画算法与数据结构</a></h3>
+
+    <div id="content" class="content">
+        <h4>符号</h4>
+
+        <table class="items" cellspacing="0">
+            <tbody id="variable">
+            <tr>
+                <th class="scene_desc" colspan="3">数据</th>
+            </tr>
+            <tr>
+                <td class="symbol"><img src="variable_A.svg"/></td>
+                <td>队列的元素</td>
+                <td class="code">A</td>
+            </tr>
+            </tbody>
+        </table>
+        <br/>
+        <table class="items" cellspacing="0">
+            <tbody id="formula">
+            <tr>
+                <th class="scene_desc" colspan="3">初始化</th>
+            </tr>
+            <tr>
+                <td class="symbol"><img src="formula_input.svg"/></td>
+                <td>设置满足堆条件的整数列</td>
+                <td class="code"></td>
+            </tr>
+            <tr>
+                <th class="scene_desc" colspan="3">数据的插入和取出</th>
+            </tr>
+            <tr>
+                <td class="symbol"><img src="formula_write.svg"/></td>
+                <td>插入元素</td>
+                <td class="code">A[heapSize++] &larr; x</td>
+            </tr>
+            <tr>
+                <td class="symbol"><img src="formula_upRotation.svg"/></td>
+                <td>进行向上调整堆</td>
+                <td class="code">upHeap(heapSize-1)</td>
+            </tr>
+            <tr>
+                <td class="symbol"><img src="formula_downRotation.svg"/></td>
+                <td>进行向下调整堆</td>
+                <td class="code">downHeap(0)</td>
+            </tr>
+            <tr>
+                <td class="symbol"><img src="formula_heap.svg"/></td>
+                <td>表示队列中的元素</td>
+                <td class="code">区间[0, heapSize)</td>
+            </tr>
+            </tbody>
+        </table>
+
+        <br/>
+        <h4>动画</h4>
+        <div id="scene" class="scene">
+            <div><p><b class="scene_desc">初始化</b><br/><img src="scene_0.svg" alt="优先队列 | 初期化"
+                                                              title="优先队列 | 初期化"/></p></div>
+            <div><p><b class="scene_desc">数据的插入和取出</b><br/><img src="scene_1.svg"
+                                                                        alt="优先队列 | 数据的插入和取出"
+                                                                        title="优先队列 | 数据的插入和取出"/></p></div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+

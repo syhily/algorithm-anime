@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>选择排序 | 动画算法与数据结构</title>
+    <link rel="stylesheet" href="/asserts/stylesheets/print.css" type="text/css" media="all"/>
+</head>
+<body>
+<div class="wrapper">
+    <h3>选择排序 | <a href="/">动画算法与数据结构</a></h3>
+
+    <div id="content" class="content">
+        <h4>符号</h4>
+
+        <table class="items" cellspacing="0">
+            <tbody id="variable">
+            <tr>
+                <th class="scene_desc" colspan="3">数据</th>
+            </tr>
+            <tr>
+                <td class="symbol"><img src="variable_A.svg"/></td>
+                <td>整数列</td>
+                <td class="code">A</td>
+            </tr>
+            </tbody>
+        </table>
+        <br/>
+        <table class="items" cellspacing="0">
+            <tbody id="formula">
+            <tr>
+                <th class="scene_desc" colspan="3">输入</th>
+            </tr>
+            <tr>
+                <td class="symbol"><img src="formula_in.svg"/></td>
+                <td>输入整数列</td>
+                <td class="code"></td>
+            </tr>
+            <tr>
+                <th class="scene_desc" colspan="3">排序</th>
+            </tr>
+            <tr>
+                <td class="symbol"><img src="formula_comp.svg"/></td>
+                <td>搜索未排序部分的最小值</td>
+                <td class="code">minj &larr; minimum(A, i, N)</td>
+            </tr>
+            <tr>
+                <td class="symbol"><img src="formula_cp.svg"/></td>
+                <td>指向最小值</td>
+                <td class="code">minj</td>
+            </tr>
+            <tr>
+                <td class="symbol"><img src="formula_w.svg"/></td>
+                <td>将最小值与未排序部分的开头交换</td>
+                <td class="code">swap(A[i], A[minj])</td>
+            </tr>
+            <tr>
+                <td class="symbol"><img src="formula_sorted.svg"/></td>
+                <td>扩展已排序部分的区间</td>
+                <td class="code">区间[0, i)</td>
+            </tr>
+            <tr>
+                <th class="scene_desc" colspan="3">输出</th>
+            </tr>
+            <tr>
+                <td class="symbol"><img src="formula_out.svg"/></td>
+                <td>输出已排序的整数列</td>
+                <td class="code"></td>
+            </tr>
+            </tbody>
+        </table>
+
+        <br/>
+        <h4>动画</h4>
+        <div id="scene" class="scene">
+            <div><p><b class="scene_desc">输入</b><br/><img src="scene_0.svg" alt="选择排序 | 输入"
+                                                            title="选择排序 | 输入"/></p></div>
+            <div><p><b class="scene_desc">排序</b><br/><img src="scene_1.svg" alt="选择排序 | 整列"
+                                                            title="选择排序 | 整列"/></p></div>
+            <div><p><b class="scene_desc">输出</b><br/><img src="scene_2.svg" alt="选择排序 | 输出"
+                                                            title="选择排序 | 输出"/></p></div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+

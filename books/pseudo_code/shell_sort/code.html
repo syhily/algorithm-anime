@@ -1,0 +1,33 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>动画算法与数据结构</title>
+    <link rel="stylesheet" href="/asserts/stylesheets/main.css" type="text/css" media="all"/>
+</head>
+
+<div class="pseudo_code">
+
+<pre>
+shellSort(A, N):
+    interval &larr; {5, 3, 1}
+
+    for g in interval:
+        insertionSort(A, N, g)
+
+# 指定间隔 g，进行插入排序
+insertionSort(A, N, g):
+    for i &larr; g to N-1:
+        t &larr; A[i]
+        j &larr; i - g
+
+        while True:
+            if j < 0: break
+            if not (j &ge; 0 and A[j] > t): break
+            A[j+g] &larr; A[j]
+            j &larr; j - g
+
+        A[j+g] &larr; t
+</pre>
+    </body>
+</html>
+

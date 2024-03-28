@@ -1,0 +1,25 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>动画算法与数据结构</title>
+    <link rel="stylesheet" href="/asserts/stylesheets/main.css" type="text/css" media="all"/>
+</head>
+
+<div class="pseudo_code">
+
+
+<pre>
+heapSort(A):
+    # buildHeap
+    for i &larr; N/2 - 1 downto 0:
+        downHeap(A, i)
+
+    heapSize &larr; N
+    while heapSize &ge; 2:
+        swap(A[0], A[heapSize-1])
+        heapSize--
+        downHeap(A, 0) # 在 heapSize 的范围内进行向下调整堆
+</pre>
+</div>
+</body>
+</html>

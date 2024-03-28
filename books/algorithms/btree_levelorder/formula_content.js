@@ -1,0 +1,2 @@
+var variable_content = '<tr><th class="scene_desc" colspan="3">数据</th></tr><tr><td class="symbol"><img src="variable_L.svg" /></td><td>访问顺序</td><td class="code">L</td></tr>';
+var formula_content = '<tr><th class="scene_desc" colspan="3">二叉树的遍历</th></tr><tr><td class="symbol"><img src="formula_visit.svg" /></td><td>节点上显示的是访问节点的顺序</td><td class="code">L[u] &larr; time++</td></tr><tr><td class="symbol"><img src="formula_visited.svg" /></td><td>扩展已访问节点的范围</td><td class="code">相应的 L[u] 被设置了值的节点</td></tr>';
